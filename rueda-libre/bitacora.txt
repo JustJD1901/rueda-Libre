@@ -67,3 +67,112 @@ Pruebas MiniReto 7:
    Dato de prueba: Casilla desmarcada.
    Resultado esperado: El navegador impide el envío exigiendo marcar la casilla para continuar (falla required).
    Resultado obtenido: "Controla esta casilla si deseas continuar"
+
+Auditoría MiniReto 8:
+
+- Texto alternativo de las imágenes en index.html fue modificado.
+- Apartado del enlace a los recorrido guiados en index.html fue modificado e integrado de una manera más descriptiva.
+
+
+Mapa de uso de color MiniReto 8:
+
+1. Texto Blanco (#FFFFFF) sobre fondo Verde Ruta (#1E7A4F)
+
+   - Ratio: 5.31:1
+
+   - Clasificación: Apto para texto normal y grande
+
+
+2. Texto Blanco (#FFFFFF) sobre fondo Naranja Pedal (#F39A2B)
+
+   - Ratio: 2.21:1
+
+   - Clasificación: No apta
+
+
+3. Texto Azul Noche (#14213D) sobre fondo Naranja Pedal (#F39A2B)
+
+   - Ratio: 7.2:1
+
+   - Clasificación: Apta para texto normal y grande
+
+
+4. Texto Azul Noche (#14213D) sobre fondo Crema (#FAF6EF)
+
+   - Ratio: 14.82:1
+
+   - Clasificación: Apta para texto normal y grande
+
+
+5. Texto Gris Asfalto (#5B6470) sobre fondo Crema (#FAF6EF)
+
+   - Ratio: 5.56:1
+
+   - Clasificación: Apta para texto normal y grande
+
+
+6. Texto Verde Ruta (#1E7A4F) sobre fondo Crema (#FAF6EF)
+
+   - Ratio: 4.93:1
+
+   - Clasificación:  Apta para texto normal y grande
+
+
+7. Texto Naranja Pedal (#F39A2B) sobre fondo Crema (#FAF6EF)
+
+   - Ratio: 2.05:1
+
+   - Clasificación: No apta
+
+
+8. Texto Blanco (#FFFFFF) sobre fondo Azul Noche (#14213D)
+
+   - Ratio: 15.97:1
+
+   - Clasificación: Apta para texto normal y grande
+
+
+**Elección de colores:
+
+* FONDO GENERAL DEL SITIO:
+
+  - Color: Crema (#FAF6EF)
+
+
+* TEXTOS PRINCIPALES (Párrafos y lectura larga):
+
+  - Color de texto: Azul Noche
+
+  - Fondo: Crema
+
+
+* TEXTOS SECUNDARIOS (Fechas, notas):
+
+  - Color de texto: Gris Asfalto
+
+  - Fondo: Crema
+
+
+* TÍTULOS Y ENCABEZADOS:
+
+  - Color de texto: Azul Noche
+
+  - Fondo: Crema
+
+
+* BOTONES PRINCIPALES Y ENLACES:
+
+  - Fondo del botón: Verde Ruta
+
+  - Color del texto: Blanco
+
+
+* BOTONES SECUNDARIOS / DESTACADOS:
+
+  - Fondo del botón: Naranja Pedal
+
+  - Color del texto: Azul Noche
+
+Enlace Rueda Libre:
+
+- 
