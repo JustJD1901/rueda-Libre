@@ -32,3 +32,38 @@ Elecciones MiniReto 6:
 - Para el campo de Tipo de Bicicleta utilicé <select>, pues permite seleccionar solo una opción a la vez y hace que las opciones comparten el mismo nombre.
 - Para el campo de Cantidad de bicicleta, utilicé un type=number, pues este guarda una cantidad de un objeto específico, en este caso la cantidad de bicicletas a alquilar.
 - Para el campo de Políticas de alquiler, utilicé el type=checkbox, pues este permite aceptar o negar algún requerimento.
+
+Pruebas MiniReto 7:
+
+- Prueba 1 - Nombre Completo:
+   Dato de prueba: Jo (2 caracteres).
+   Resultado esperado: El navegador bloquea el envío por texto muy corto (falla minlength="3").
+   Resultado obtenido: "Alarga el texto a 3 o más caracteres"
+- Prueba 2 - Número de documento:
+   Dato de prueba: 123ABC45 (Contiene letras).
+   Resultado esperado: El navegador bloquea el envío indicando formato incorrecto, ya que solo permite números (falla pattern="[0-9]{6,10}").
+   Resultado obtenido: "Haz coincidir el formato solicitado"
+- Prueba 3 - Número de documento:
+   Dato de prueba: 1234 (Solo 4 dígitos).
+   Resultado esperado: El formulario no se envía porque no cumple con la longitud mínima del patrón.
+   Resultado obtenido: "Haz coincidir el formato solicitado"
+- Prueba 4 - Correo electrónico:
+   Dato de prueba: usuario@dominio (Sin extensión .com).
+   Resultado esperado: El navegador exige un formato de correo válido con un dominio completo (falla type="email").
+   Resultado obtenido: El navegador lo acepta
+- Prueba 5 - Número de celular:
+   Dato de prueba: 4123456789 (Empieza por 4).
+   Resultado esperado: El formulario no se envía, porque el número debe empezar por 3 (falla pattern="3[0-9]{9}").
+   Resultado obtenido: "Haz coincidir el formato solicitado"
+- Prueba 6 - Fecha de alquiler:
+   Dato de prueba: 2026-10-31 (Fuera de rango).
+   Resultado esperado: El navegador indica que el valor debe ser igual o posterior al 1 de noviembre de 2026 (falla min="2026-11-01").
+   Resultado obtenido: "El valor debe ser igual o anterior a 31/12/2026"
+- Prueba 7 - Cantidad de bicicletas:
+   Dato de prueba: 7 (Excede el máximo).
+   Resultado esperado: El navegador indica que el valor máximo permitido es 6 (falla max="6").
+   Resultado obtenido: "El valor deber ser menor de o igual a 6"
+- Prueba 8 - Políticas de alquiler:
+   Dato de prueba: Casilla desmarcada.
+   Resultado esperado: El navegador impide el envío exigiendo marcar la casilla para continuar (falla required).
+   Resultado obtenido: "Controla esta casilla si deseas continuar"
