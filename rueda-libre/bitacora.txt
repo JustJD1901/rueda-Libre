@@ -175,4 +175,9 @@ Mapa de uso de color MiniReto 8:
 
 Enlace Rueda Libre:
 
-- 
+- https://justjd1901.github.io/rueda-Libre/
+
+Propiedad heredada y no heredada MiniReto 9:
+
+- Propiedad heredada: font-family: var(--color-azul); es una propiedad que hereda el texto del Body
+- Propiedad no heredada: background-color. El valor final en el párrafo es rgba(0, 0, 0, 0) indicando que no heredó el fondo del body, sino que es transparente por defecto.

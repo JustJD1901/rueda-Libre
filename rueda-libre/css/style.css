@@ -1,0 +1,25 @@
+:root {
+    --color-verde: #1e7a4f;
+    --color-naranja: #f39a2b;
+    --color-azul: #14213d;
+    --color-crema: #faf6ef;
+    --color-gris: #5b6470;
+
+    --font-titulos: 'Montserrat', system-ui, -apple-system, sans-serif;
+    --font-cuerpo: 'Open Sans', Arial, Helvetica, sans-serif;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+body {
+    background-color: var(--color-crema);
+    font-family: var(--font-cuerpo);
+    color: var(--color-azul);
+    padding: var(--spacing-md);
+}
+h1, h2, h3 {
+    font-family: var(--font-titulos);
+    color: var(--color-azul);
+    margin-bottom: var(--spacing-sm);
+}
