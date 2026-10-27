@@ -186,3 +186,9 @@ Conflicto con el cálculo de especificidad:
  
 - Conflicto: La regla .activo (especificidad 0,1,0) era sobrescrita por #menu a (especificidad 1,0,1).
 - Solución: Se aumentó la especificidad a #menu a.activo (1,1,1) para que gane en la cascada sin usar !important.
+
+Prueba de box-sizing en tarjeta (<article>) MiniReto 11:
+
+- Sin border-box (box-sizing: content-box): El ancho de la tarjeta aumentaba al sumarle los valores del padding interno y del borde (border: 1px), haciendo que el elemento ocupara más espacio real del calculado y rompiera la alineación.
+
+- Con box-sizing: border-box: Al inspeccionar en Computed, el ancho total de la tarjeta se mantiene fijo en el tamaño asignado por su contenedor (main). El padding y el border se calcularon hacia el interior, lo cual garantiza que el diseño no se rompa de manera imprevista.
