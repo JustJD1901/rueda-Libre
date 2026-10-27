@@ -16,10 +16,29 @@ body {
     background-color: var(--color-crema);
     font-family: var(--font-cuerpo);
     color: var(--color-azul);
-    padding: var(--spacing-md);
 }
 h1, h2, h3 {
     font-family: var(--font-titulos);
     color: var(--color-azul);
-    margin-bottom: var(--spacing-sm);
+}
+#menu a {
+    color: var(--color-gris);
+}
+#menu a.activo {
+    color: var(--color-verde);
+    font-weight: 600; 
+}
+#menu a:hover, #menu a:focus {
+    color: var(--color-naranja);
+}
+.boton-primario {
+    background-color: var(--color-verde);
+    color: #ffff;
+}
+.boton-primario:hover, .boton-primario:focus {
+    background-color: #f39a2b;
+    color: var(--color-azul);
+}
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-naranja);
 }
