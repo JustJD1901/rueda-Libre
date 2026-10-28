@@ -192,3 +192,22 @@ Prueba de box-sizing en tarjeta (<article>) MiniReto 11:
 - Sin border-box (box-sizing: content-box): El ancho de la tarjeta aumentaba al sumarle los valores del padding interno y del borde (border: 1px), haciendo que el elemento ocupara más espacio real del calculado y rompiera la alineación.
 
 - Con box-sizing: border-box: Al inspeccionar en Computed, el ancho total de la tarjeta se mantiene fijo en el tamaño asignado por su contenedor (main). El padding y el border se calcularon hacia el interior, lo cual garantiza que el diseño no se rompa de manera imprevista.
+
+Resumen de la semana 1: Rueda Libre.
+
+Día 1: Estructura básica
+Empecé armando el contenido principal de la página. Puse los textos, las fotos de las bicicletas y armé la tabla de precios. También dejé listo el menú de navegación para poder movernos entre las páginas del sitio.
+
+Día 2: Formularios y publicación
+Me enfoqué en mejorar el código usando HTML semántico para que estuviera más ordenado. Después armé el formulario de reservas con reglas para que avise si el usuario llena mal un dato (como el correo o el celular). Al final, publiqué la página en internet usando GitHub Pages.
+
+Día 3: Estilos y diseño final
+Le di forma a la página usando CSS. Apliqué los colores, ajusté los espacios para que no se viera todo amontonado y armé las tarjetas de los servicios. Por último, acomodé la etiqueta de "Nuevo" en la bici eléctrica y dejé fijo el botón flotante de WhatsApp.
+
+Cosas que me gustaría mejorar más adelante:
+
+- Hacer que la página se adapte bien a las pantallas de los celulares, porque ahora está más pensada para computador.
+
+- Intentar achicar el peso de las imágenes para que la página cargue más rápido.
+
+- Ponerle transiciones a los botones para que cuando pases el mouse, el color cambie suave y no de golpe.
