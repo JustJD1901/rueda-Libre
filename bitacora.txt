@@ -211,3 +211,7 @@ Cosas que me gustaría mejorar más adelante:
 - Intentar achicar el peso de las imágenes para que la página cargue más rápido.
 
 - Ponerle transiciones a los botones para que cuando pases el mouse, el color cambie suave y no de golpe.
+
+MiniReto 1 - Semana 2:
+
+- Al estrechar la pantalla del navegador el último bloque se desplaza hacia abajo de modo que el contenido siga siendo legible, esto sucede gracias al flex-wrap: wrap.
