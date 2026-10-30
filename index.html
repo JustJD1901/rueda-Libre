@@ -13,11 +13,11 @@
 
 <body>
     <header>
-        <div id="header_left">
+        <div class="header_left">
             <img src="img/rueda-libre.png" alt="Logo Rueda Libre">
             <h1>Rueda Libre</h1>
         </div>
-        <div id="header_right">
+        <div class="header_right">
             <nav>
                 <ul id="menu">
                     <li><a href="index.html" class="activo">Inicio</a></li>
@@ -30,7 +30,7 @@
     <main>
         <p>Bienvenido a Rueda Libre, este es un emprendimiento nacido en Medellín cuyo propósito es alquilar bicicletas en
             la ciudad y organizar recorridos guiados en la misma.</p>
-        <img src="img/portada.jpeg" alt="Portada Rueda Libre" width="500 px" height="300px">
+        <img src="img/portada.jpeg" alt="Portada Rueda Libre" id="imagen-portada">
         <p><a href="#encuentranos">Encuentranos</a></p>
         
         <section>
@@ -43,49 +43,87 @@
         <section>
             <h2>Nuestra Flota de Bicicletas</h2>
             <p>Conoce las opciones que tenemos disponibles para que ruedes cómodamente por Medellín:</p>
-            
-            <article>
-                <h3>Bicicleta Urbana</h3>
-                <p>Perfecta para rodar tranquilamente por las ciclorrutas y zonas planas de la ciudad. Es cómoda, ligera y cuenta con una canasta ideal para llevar tus pertenencias mientras recorres el centro o los parques de Medellín.</p>
-                <img src="img/bicicleta-urbana.jpg" alt="Fotografía de Bicicleta Urbana" width="500px" height="300px">
-            </article>
+            <div class="contenedor-tarjeta">
+                <article> 
+                    <h3>Urbana Clásica</h3>
+                    <p>Cómoda y liviana para las ciclorrutas.
+                    <br>$10.000 x hora</p>
+                    <img src="img/urbana-clasica.jpg" alt="Bicicleta Urbana Clásica" >
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
 
-            <article>
-                <h3>Bicicleta de Montaña</h3>
-                <p>Diseñada para los terrenos más exigentes, las rutas sin pavimentar o las afueras de la ciudad. Cuenta con suspensión delantera, múltiples cambios y llantas con agarre superior para garantizar tu seguridad en cada descenso.</p>
-                <img src="img/bicicleta-montana.jpg" alt="Fotografía de Bicicleta de Montaña" width="500px" height="300px">
-            </article>
+                <article>
+                    <h3>Urbana Plegable</h3>
+                    <p>Se dobla en segundos; ideal para combinar con el metro.
+                    <br>$12.000 x hora</p>
+                    <img src="img/urbana-plegable.jpg" alt="Bicicleta Urbana Plegable" >
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
 
-            <article class="tarjeta-destacada">
-                <span class="insignia-nuevo">Nuevo</span>
-                <h3>Bicicleta Eléctrica</h3>
-                <p>Conquista las lomas de Medellín sin esfuerzo. Autonomía de hasta 40 km, asistencia al pedaleo y motor silencioso. Ideal para trayectos largos y exigentes. <strong>Incluye casco de alta protección y candado reforzado</strong>.</p>
-                <img src="img/bicicleta-electrica.jpg" alt="Fotografía de Bicicleta Eléctrica" width="500px" height="300px">
-            </article>
+                <article>
+                    <h3>Montaña Trail</h3>
+                    <p>Suspensión delantera y 21 cambios para las subidas.
+                    <br>$15.000 x hora</p>
+                    <img src="img/montana-trail.jpg" alt="Bicicleta Montaña Trail" >
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
+
+                <article>
+                    <h3>Gravel Aventura</h3>
+                    <p>Para rutas mixtas de asfalto y destapado.
+                    <br>$18.000 x hora</p>
+                    <img src="img/gravel-aventura.jpg" alt="Bicicleta Gravel Aventura" >
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
+
+                <article>
+                    <h3>Eléctrica Urbana</h3>
+                    <p>Asistencia eléctrica con 45 km de autonomía.
+                    <br>$18.000 x hora</p>
+                    <img src="img/electrica-urbana.jpg" alt="Bicicleta Eléctrica Urbana" >
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
+
+                <article>
+                    <h3>Infantil</h3>
+                    <p>Para niños de 6 a 10 años.
+                    <br>$8.000 x hora</p>
+                    <img src="img/bicicleta-infantil.jpg" alt="Bicicleta Infantil" >
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
+
+                <article>
+                    <h3>Tándem</h3>
+                    <p>Para dos personas; perfecta para pasear en pareja
+                    <br>$20.000 x hora</p>
+                    <img src="img/bicicleta-tandem.jpg" alt="Bicicleta Tándem">
+                    <a href="paginas/reservas.html">Reservar</a>
+                </article>
+            </div>
         </section>
 
         <section>
             <h2>Nuestros Servicios</h2>
-            
-            <article>
-                <h3>Alquiler de bicicletas</h3>
-                <p>Recorre Medellín con total libertad. Ofrecemos bicicletas por horas, medio día o días completos. Todo
-                    alquiler <strong>incluye casco y candado de alta seguridad</strong>. <em>Siente la brisa y disfruta del clima de la eterna primavera en cada trayecto</em>.</p>
-            </article>
-            
-            <article>
-                <h3>Recorridos guiados</h3>
-                <p>Únete a nuestras rutas temáticas por el centro histórico, parques principales y zonas de arte urbano. Cada recorrido
-                    guiado <strong>incluye hidratación y un guía bilingüe</strong>. <em>Es la oportunidad perfecta para conocer la verdadera esencia paisa</em>.
-                </p>
-                <p>Conoce los detalles de <a href="paginas/tarifas.html#recorridos_guiados">nuestros recorridos</a>.</p>
-            </article>
+            <div class="contenedor-tarjeta">
+                <article>
+                    <h3>Alquiler de bicicletas</h3>
+                    <p>Recorre Medellín con total libertad. Ofrecemos bicicletas por horas, medio día o días completos. Todo
+                        alquiler <strong>incluye casco y candado de alta seguridad</strong>. <em>Siente la brisa y disfruta del clima de la eterna primavera en cada trayecto</em>.</p>
+                </article>
+                
+                <article>
+                    <h3>Recorridos guiados</h3>
+                    <p>Únete a nuestras rutas temáticas por el centro histórico, parques principales y zonas de arte urbano. Cada recorrido
+                        guiado <strong>incluye hidratación y un guía bilingüe</strong>. <em>Es la oportunidad perfecta para conocer la verdadera esencia paisa</em>.
+                    </p>
+                    <p>Conoce los detalles de <a href="paginas/tarifas.html#recorridos_guiados">nuestros recorridos</a>.</p>
+                </article>
 
-            <article>
-                <h3>Taller y Mantenimiento</h3>
-                <p>¿Tienes tu propia bicicleta pero necesita un ajuste? Nuestro equipo de mecánicos expertos ofrece servicio de mantenimiento preventivo, reparación de pinchazos, y ajuste de frenos y cambios para que sigas rodando seguro por la ciudad.</p>
-            </article>
-
+                <article>
+                    <h3>Taller y Mantenimiento</h3>
+                    <p>¿Tienes tu propia bicicleta pero necesita un ajuste? Nuestro equipo de mecánicos expertos ofrece servicio de mantenimiento preventivo, reparación de pinchazos, y ajuste de frenos y cambios para que sigas rodando seguro por la ciudad.</p>
+                </article>
+            </div>
             <a href="paginas/reservas.html" class="boton-primario">Reservar ahora</a>
         </section>
 

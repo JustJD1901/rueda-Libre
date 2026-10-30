@@ -215,3 +215,9 @@ Cosas que me gustaría mejorar más adelante:
 MiniReto 1 - Semana 2:
 
 - Al estrechar la pantalla del navegador el último bloque se desplaza hacia abajo de modo que el contenido siga siendo legible, esto sucede gracias al flex-wrap: wrap.
+
+MiniReto 2 - Semana 2:
+
+- 1280px: Se ven 3 columnas en la cuadrícula
+- 900px: Se ven 3 columnas en la cuadrícula
+- 500px: Se ve 1 columna en la cuadrícula
