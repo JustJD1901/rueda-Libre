@@ -218,6 +218,15 @@ MiniReto 1 - Semana 2:
 
 MiniReto 2 - Semana 2:
 
-- 1280px: Se ven 3 columnas en la cuadrícula
+- 1280px: Se ven 4 columnas en la cuadrícula
 - 900px: Se ven 3 columnas en la cuadrícula
 - 500px: Se ve 1 columna en la cuadrícula
+
+MiniReto 3 - Semana 2:
+
+- Portada: Para la portada usé Grid, pues me permitía un mejor control de las proporciones con la medida fr sin tener que calcular porcentajes o medidas.
+- Galería: Para la galería utilicé Grid, porque me resulta más cómodo y me permite tener un mejor control de los espacios y de las columnas.
+- Reservas: Para la parte de reservas usé Grid para tener un mejor control de las proporciones de ambos bloques sin hacer cálculos adicionales.
+- Filas del formulario: Aquí utilicé Flex, pues resulta más cómodo y fácil alinear dos bloques con información y controlar sus espacios.
+- Encabezado: Para el encabezado utilicé Flex, pues me permite alinear los bloques y su contenido de manera vertical y además, poder desplazar los elementos hacia lados opuestos.
+- Pie: Para el pie también utilicé flex, pues permite ordernar y alinear los elementosen filas y también controlar su espaciado.

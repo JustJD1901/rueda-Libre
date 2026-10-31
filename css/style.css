@@ -32,7 +32,7 @@ body {
 }
 
 main {
-    max-width: 60rem;
+    max-width: 70rem;
     margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ h3 {
 }
 
 h1 {
-    margin: 1rem 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -136,6 +136,14 @@ nav {
 /* ==========================================================
 4. COMPONENTES: TARJETAS, BOTONES Y WHATSAPP
 ========================================================== */
+/* Portada */
+#contenedor-portada {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* Tarjetas de servicios */
 .contenedor-tarjeta {
     display: grid;
@@ -152,6 +160,25 @@ article {
     background-color: #ffffff;
 }
 
+/* Formulario y Contacto */
+#contenedor-reservas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+}
+
+#contenedor-formulario {
+    display: grid;
+    order: -1;
+}
+
+.contenedor-campo-informacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
 /* Botones Principales */
 .boton-primario,
 button {
@@ -164,7 +191,7 @@ button {
     font-weight: 700;
     border: none;
     cursor: pointer;
-    margin-bottom: var(--spacing-md);
+    margin: var(--spacing-md) 0;
 }
 
 .boton-primario:hover,

@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -23,79 +24,124 @@
                     <li><a href="index.html" class="activo">Inicio</a></li>
                     <li><a href="paginas/tarifas.html">Tarifas y Rutas</a></li>
                     <li><a href="paginas/reservas.html">Reservas</a></li>
-                </ul> 
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <p>Bienvenido a Rueda Libre, este es un emprendimiento nacido en Medellín cuyo propósito es alquilar bicicletas en
-            la ciudad y organizar recorridos guiados en la misma.</p>
-        <img src="img/portada.jpeg" alt="Portada Rueda Libre" id="imagen-portada">
-        <p><a href="#encuentranos">Encuentranos</a></p>
-        
+        <div id="contenedor-portada">
+            <div>
+                <h2>¡Bienvenido a Rueda Libre!</h2>
+                <p>
+                    Descubre Medellín a tu ritmo El Valle de
+                    Aburrá se vive mejor pedaleando. Siente la brisa de la ciudad de la
+                    eterna primavera mientras recorres sus calles, parques y montañas
+                    con total libertad. Ya sea que busques un paseo tranquilo por las
+                    ciclorrutas, una aventura exigente en la naturaleza o moverte
+                    ágilmente con asistencia eléctrica, tenemos la bicicleta perfecta
+                    esperándote. Elige tu ruta, ponte el casco y prepárate para rodar.
+                </p>
+                <p><a href="#encuentranos" class="boton-primario">Encuéntranos</a></p>
+            </div>
+            <img src="img/portada.jpeg" alt="Portada Rueda Libre" id="imagen-portada">
+        </div>
+
         <section>
             <h2>¿Quiénes somos?</h2>
-            <p>Somos un emprendimiento apasionado por la movilidad sostenible en Medellín. Queremos que locales y visitantes
-                descubran la magia de nuestra ciudad pedaleando, ofreciendo una alternativa de transporte ecológica, saludable y
-                divertida.</p>
+            <p>
+                Somos un emprendimiento apasionado por la movilidad sostenible en
+                Medellín. Queremos que locales y visitantes descubran la magia de
+                nuestra ciudad pedaleando, ofreciendo una alternativa de transporte
+                ecológica, saludable y divertida.
+            </p>
+        </section>
+
+        <section>
+            <h2>Nuestrar rutas</h2>
+            <div class="contenedor-tarjeta">
+                <article>
+                    <h3>Río y Parques</h3>
+                    <img src="img/ruta-rio-parques.jpg" alt="Imagen ilustrativa Río y Parques">
+                    <p><strong>Nivel de dificultad: </strong>Fácil</p>
+                </article>
+                <article>
+                    <h3>Sabores de Barrio</h3>
+                    <img src="img/ruta-sabores-barrio.jpg" alt="Imagen ilustrativa Sabores de Barrio">
+                    <p><strong>Nivel de dificultad: </strong>Medio</p>
+                </article>
+                <article>
+                    <h3>Reto las Palmas</h3>
+                    <img src="img/ruta-reto-palmas.jpg" alt="Imagen ilustrativa Reto las Palmas">
+                    <p><strong>Nivel de dificultad: </strong>Difícil</p>
+                </article>
+            </div>
         </section>
 
         <section>
             <h2>Nuestra Flota de Bicicletas</h2>
-            <p>Conoce las opciones que tenemos disponibles para que ruedes cómodamente por Medellín:</p>
+            <p>
+                Conoce las opciones que tenemos disponibles para que ruedes
+                cómodamente por Medellín:
+            </p>
             <div class="contenedor-tarjeta">
-                <article> 
+                <article>
                     <h3>Urbana Clásica</h3>
-                    <p>Cómoda y liviana para las ciclorrutas.
-                    <br>$10.000 x hora</p>
-                    <img src="img/urbana-clasica.jpg" alt="Bicicleta Urbana Clásica" >
+                    <p>Cómoda y liviana para las ciclorrutas. <br />$10.000 x hora</p>
+                    <img src="img/urbana-clasica.jpg" alt="Bicicleta Urbana Clásica">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
 
                 <article>
                     <h3>Urbana Plegable</h3>
-                    <p>Se dobla en segundos; ideal para combinar con el metro.
-                    <br>$12.000 x hora</p>
-                    <img src="img/urbana-plegable.jpg" alt="Bicicleta Urbana Plegable" >
+                    <p>
+                        Se dobla en segundos; ideal para combinar con el metro.
+                        <br />$12.000 x hora
+                    </p>
+                    <img src="img/urbana-plegable.jpg" alt="Bicicleta Urbana Plegable">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
 
                 <article>
                     <h3>Montaña Trail</h3>
-                    <p>Suspensión delantera y 21 cambios para las subidas.
-                    <br>$15.000 x hora</p>
-                    <img src="img/montana-trail.jpg" alt="Bicicleta Montaña Trail" >
+                    <p>
+                        Suspensión delantera y 21 cambios para las subidas. <br />$15.000
+                        x hora
+                    </p>
+                    <img src="img/montana-trail.jpg" alt="Bicicleta Montaña Trail">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
 
                 <article>
                     <h3>Gravel Aventura</h3>
-                    <p>Para rutas mixtas de asfalto y destapado.
-                    <br>$18.000 x hora</p>
-                    <img src="img/gravel-aventura.jpg" alt="Bicicleta Gravel Aventura" >
+                    <p>
+                        Para rutas mixtas de asfalto y destapado. <br />$18.000 x hora
+                    </p>
+                    <img src="img/gravel-aventura.jpg" alt="Bicicleta Gravel Aventura">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
 
                 <article>
                     <h3>Eléctrica Urbana</h3>
-                    <p>Asistencia eléctrica con 45 km de autonomía.
-                    <br>$18.000 x hora</p>
-                    <img src="img/electrica-urbana.jpg" alt="Bicicleta Eléctrica Urbana" >
+                    <p>
+                        Asistencia eléctrica con 45 km de autonomía. <br />$18.000 x hora
+                    </p>
+                    <img src="img/electrica-urbana.jpg" alt="Bicicleta Eléctrica Urbana">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
 
                 <article>
                     <h3>Infantil</h3>
-                    <p>Para niños de 6 a 10 años.
-                    <br>$8.000 x hora</p>
-                    <img src="img/bicicleta-infantil.jpg" alt="Bicicleta Infantil" >
+                    <p>Para niños de 6 a 10 años. <br />$8.000 x hora</p>
+                    <img src="img/bicicleta-infantil.jpg" alt="Bicicleta Infantil">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
 
                 <article>
                     <h3>Tándem</h3>
-                    <p>Para dos personas; perfecta para pasear en pareja
-                    <br>$20.000 x hora</p>
+                    <p>
+                        Para dos personas; perfecta para pasear en pareja <br />$20.000 x
+                        hora
+                    </p>
                     <img src="img/bicicleta-tandem.jpg" alt="Bicicleta Tándem">
                     <a href="paginas/reservas.html">Reservar</a>
                 </article>
@@ -107,21 +153,38 @@
             <div class="contenedor-tarjeta">
                 <article>
                     <h3>Alquiler de bicicletas</h3>
-                    <p>Recorre Medellín con total libertad. Ofrecemos bicicletas por horas, medio día o días completos. Todo
-                        alquiler <strong>incluye casco y candado de alta seguridad</strong>. <em>Siente la brisa y disfruta del clima de la eterna primavera en cada trayecto</em>.</p>
+                    <p>
+                        Recorre Medellín con total libertad. Ofrecemos bicicletas por
+                        horas, medio día o días completos. Todo alquiler
+                        <strong>incluye casco y candado de alta seguridad</strong>.
+                        <em>Siente la brisa y disfruta del clima de la eterna primavera en
+                            cada trayecto</em>.
+                    </p>
                 </article>
-                
+
                 <article>
                     <h3>Recorridos guiados</h3>
-                    <p>Únete a nuestras rutas temáticas por el centro histórico, parques principales y zonas de arte urbano. Cada recorrido
-                        guiado <strong>incluye hidratación y un guía bilingüe</strong>. <em>Es la oportunidad perfecta para conocer la verdadera esencia paisa</em>.
+                    <p>
+                        Únete a nuestras rutas temáticas por el centro histórico, parques
+                        principales y zonas de arte urbano. Cada recorrido guiado
+                        <strong>incluye hidratación y un guía bilingüe</strong>.
+                        <em>Es la oportunidad perfecta para conocer la verdadera esencia
+                            paisa</em>.
                     </p>
-                    <p>Conoce los detalles de <a href="paginas/tarifas.html#recorridos_guiados">nuestros recorridos</a>.</p>
+                    <p>
+                        Conoce los detalles de
+                        <a href="paginas/tarifas.html#recorridos_guiados">nuestros recorridos</a>.
+                    </p>
                 </article>
 
                 <article>
                     <h3>Taller y Mantenimiento</h3>
-                    <p>¿Tienes tu propia bicicleta pero necesita un ajuste? Nuestro equipo de mecánicos expertos ofrece servicio de mantenimiento preventivo, reparación de pinchazos, y ajuste de frenos y cambios para que sigas rodando seguro por la ciudad.</p>
+                    <p>
+                        ¿Tienes tu propia bicicleta pero necesita un ajuste? Nuestro
+                        equipo de mecánicos expertos ofrece servicio de mantenimiento
+                        preventivo, reparación de pinchazos, y ajuste de frenos y cambios
+                        para que sigas rodando seguro por la ciudad.
+                    </p>
                 </article>
             </div>
             <a href="paginas/reservas.html" class="boton-primario">Reservar ahora</a>
@@ -130,31 +193,45 @@
         <section>
             <h2>¿Cómo alquilar?</h2>
             <ol>
-                <li>Elige tu bicicleta ideal y la duración del servicio en nuestro punto físico o web.</li>
-                <li>Presenta tu documento de identidad original y realiza el pago.</li>
-                <li>Permite que nuestro equipo ajuste la altura del sillín y te brinde recomendaciones de seguridad.</li>
-                <li>¡Comienza tu ruta por Medellín y devuelve la bicicleta en nuestra tienda al finalizar!</li>
+                <li>
+                    Elige tu bicicleta ideal y la duración del servicio en nuestro punto
+                    físico o web.
+                </li>
+                <li>
+                    Presenta tu documento de identidad original y realiza el pago.
+                </li>
+                <li>
+                    Permite que nuestro equipo ajuste la altura del sillín y te brinde
+                    recomendaciones de seguridad.
+                </li>
+                <li>
+                    ¡Comienza tu ruta por Medellín y devuelve la bicicleta en nuestra
+                    tienda al finalizar!
+                </li>
             </ol>
-            
+
             <h3>Beneficios de rodar con nosotros:</h3>
             <ul>
                 <li>Mantenimiento preventivo diario en todos nuestros equipos.</li>
                 <li>Asistencia técnica en la vía en caso de pinchazos o averías.</li>
-                <li>Rutas sugeridas para evitar el tráfico pesado y priorizar las ciclorrutas.</li>
+                <li>
+                    Rutas sugeridas para evitar el tráfico pesado y priorizar las
+                    ciclorrutas.
+                </li>
             </ul>
             <p>Estas son nuestras <a href="paginas/tarifas.html">tarifas</a>.</p>
         </section>
 
         <section>
             <h2 id="encuentranos">Encuentranos</h2>
-            <img src="img/ruta.jpeg" alt="Imagen Ilustrativa Ruta: Reto de Palmas" width="500" height="300">
-            <p>Estamos ubicados a pocos pasos de la estación Poblado del Metro, listos para entregarte tu bicicleta.<br>
-                <a href="https://maps.app.goo.gl/J8Z7sCLFVsoX4RQG8" target="_blank">Nuestra ubicación</a><br>
+            <img src="img/ruta.jpeg" alt="Imagen Ilustrativa Ruta: Reto de Palmas" width="500" height="300" />
+            <p>
+                Estamos ubicados a pocos pasos de la estación Poblado del Metro,
+                listos para entregarte tu bicicleta.<br />
+                <a href="https://maps.app.goo.gl/J8Z7sCLFVsoX4RQG8" target="_blank">Nuestra ubicación</a><br />
                 <a href="mailto:rueda_libre@gmail.com">Contáctanos</a>
             </p>
         </section>
-
-
     </main>
     <footer>
         Rueda Libre
@@ -166,4 +243,5 @@
         WhatsApp
     </a>
 </body>
+
 </html>
