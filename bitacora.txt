@@ -230,3 +230,12 @@ MiniReto 3 - Semana 2:
 - Filas del formulario: Aquí utilicé Flex, pues resulta más cómodo y fácil alinear dos bloques con información y controlar sus espacios.
 - Encabezado: Para el encabezado utilicé Flex, pues me permite alinear los bloques y su contenido de manera vertical y además, poder desplazar los elementos hacia lados opuestos.
 - Pie: Para el pie también utilicé flex, pues permite ordernar y alinear los elementosen filas y también controlar su espaciado.
+
+MiniReto 4 - Semana 2:
+
+- Problema 1 (360px - Móvil): La tabla de tarifas obligaba a hacer scroll horizontal y los textos se veían muy apretados.
+   Solución: En los estilos base, reduje el tamaño de fuente de la tabla a smaller y el padding de las celdas a 0.25rem para que encajara en la pantalla pequeña.
+- Problema 2 (768px - Tablet): El encabezado, el menú de navegación y el pie de página ocupaban demasiado espacio vertical al estar en una sola columna.
+   Solución: Implementé un media query para cambiar el flex-direction a row, distribuyendo estos elementos horizontalmente y aprovechando el ancho de la pantalla.
+- Problema 3 (1280px - Escritorio): Las tarjetas de servicios se estiraban de forma irregular si se dejaban en una sola columna en pantallas grandes.
+   Solución: Dentro de los media queries de pantallas más grandes, utilicé grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) para permitir que las tarjetas se acomodaran en varias columnas automáticamente según el espacio disponible.
