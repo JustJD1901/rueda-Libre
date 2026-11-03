@@ -239,3 +239,8 @@ MiniReto 4 - Semana 2:
    Solución: Implementé un media query para cambiar el flex-direction a row, distribuyendo estos elementos horizontalmente y aprovechando el ancho de la pantalla.
 - Problema 3 (1280px - Escritorio): Las tarjetas de servicios se estiraban de forma irregular si se dejaban en una sola columna en pantallas grandes.
    Solución: Dentro de los media queries de pantallas más grandes, utilicé grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) para permitir que las tarjetas se acomodaran en varias columnas automáticamente según el espacio disponible.
+
+MiniReto 5 - Semana 2: 
+
+El tiempo total invertido fue de 30 minutos, donde pude armar la flota con sus imágenes, información y botones funcionales sin tener que escribir una sola línea de código en css, unicamente identificando el estilo a utilizar y la clase correspondiente según la documentación de Bootstrap.
+ Pude armar la estructura facilmente sin tener que kuchar con especificidades y detalles como espaciado o gap, sin embargo me sentí limitado, pues siento que no hay tanta personalización, ya que son plantillas predefinidas que vienen con el framework.

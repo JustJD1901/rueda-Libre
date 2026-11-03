@@ -166,6 +166,16 @@ article {
     background-color: #ffffff;
 }
 
+article p,
+article h3,
+article a {
+    margin: var(--spacing-sm);
+}
+
+#recorridos {
+    margin: 0;
+}
+
 /* Formulario y Contacto */
 #contenedor-reservas {
     display: grid;
@@ -347,13 +357,6 @@ footer {
         gap: 5rem;
     }
 
-    .contenedor-campo-informacion {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        margin-bottom: var(--spacing-md);
-    }
-
     table {
         width: 100%;
         border-collapse: collapse;
@@ -436,13 +439,6 @@ footer {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 5rem;
-    }
-
-    .contenedor-campo-informacion {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        margin-bottom: var(--spacing-md);
     }
 
     table {
