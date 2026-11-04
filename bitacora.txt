@@ -243,4 +243,18 @@ MiniReto 4 - Semana 2:
 MiniReto 5 - Semana 2: 
 
 El tiempo total invertido fue de 30 minutos, donde pude armar la flota con sus imágenes, información y botones funcionales sin tener que escribir una sola línea de código en css, unicamente identificando el estilo a utilizar y la clase correspondiente según la documentación de Bootstrap.
- Pude armar la estructura facilmente sin tener que kuchar con especificidades y detalles como espaciado o gap, sin embargo me sentí limitado, pues siento que no hay tanta personalización, ya que son plantillas predefinidas que vienen con el framework.
+Pude armar la estructura facilmente sin tener que kuchar con especificidades y detalles como espaciado o gap, sin embargo me sentí limitado, pues siento que no hay tanta personalización, ya que son plantillas predefinidas que vienen con el framework.
+
+MiniReto 6 - Semana 2:
+
+Cinco clases que encontré en la documentación:
+
+- d-flex: Activa Flexbox en un contenedor para organizar, alinear y distribuir sus elementos internos fácilmente sin necesidad de CSS personalizado.
+
+- flex-md-row: Coloca los elementos internos en una fila horizontal, pero únicamente desde el punto de quiebre de pantallas medianas (tabletas) en adelante.
+
+- align-items-center: Centra los elementos verticalmente dentro de un contenedor flexible para que queden alineados sobre la misma línea imaginaria.
+
+- d-none: Oculta el elemento por completo de la pantalla, lo cual es ideal para esconder elementos decorativos en la vista de celulares.
+
+- rounded-pill: Aplica un borde completamente redondeado en los extremos de un contenedor, dándole un aspecto de píldora que resulta perfecto para simular botones.
