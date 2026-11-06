@@ -258,3 +258,11 @@ Cinco clases que encontré en la documentación:
 - d-none: Oculta el elemento por completo de la pantalla, lo cual es ideal para esconder elementos decorativos en la vista de celulares.
 
 - rounded-pill: Aplica un borde completamente redondeado en los extremos de un contenedor, dándole un aspecto de píldora que resulta perfecto para simular botones.
+
+MiniReto 7 - Semana 2:
+
+Conflictos entre los estilos y Bootstrap:
+
+- Las imágenes de las tarjetas no se acoplaban a la parte superior, tuve que borrar la propiedad de margin: 7px para poder solucionar esto.
+- Los bordes de las imágenes de las tarjetas quedaban todos redondos, tuve que quitar los bordes de esta clase de tarjetas y aplicarles unicamente bordes a las esquinas superiores.
+- Los elementos dentro de las tarjetas quedaban mal acomodados debido a márgenes definidas en la stylesheet, la solución fue borrar estas márgenes para que Bootstrap se encargue.

@@ -1,11 +1,8 @@
-/************************************************************************
- * RUEDA LIBRE v1.5 - HOJA DE ESTILOS (CSS)
- * Arquitectura: Mobile-First
- ************************************************************************/
-
 /* ==========================================================================
 1. VARIABLES GLOBALES Y RESET
 ========================================================================== */
+
+/* Tarifas y Reservas */
 :root {
     --color-verde: #1e7a4f;
     --color-naranja: #f39a2b;
@@ -21,6 +18,7 @@
     --spacing-lg: 2rem;
 }
 
+/* Tarifas y Reservas */
 * {
     box-sizing: border-box;
 }
@@ -28,6 +26,8 @@
 /* ==========================================================================
 2. ESTILOS BASE Y TIPOGRAFÍA
    ========================================================================== */
+
+/* Tarifas y Reservas */
 body {
     background-color: var(--color-crema);
     font-family: var(--font-cuerpo);
@@ -36,11 +36,13 @@ body {
     padding-bottom: 5rem;
 }
 
+/* Tarifas y Reservas */
 main {
     max-width: 70rem;
     margin: 0 auto;
 }
 
+/* Tarifas y Reservas */
 h1,
 h2,
 h3 {
@@ -49,17 +51,19 @@ h3 {
     margin-bottom: var(--spacing-sm);
 }
 
+/* Tarifas y Reservas */
 h1 {
     margin: 0;
     padding: 0;
 }
 
+/* Tarifas y Reservas */
 p,
-ul,
-ol {
+ul {
     margin-bottom: var(--spacing-md);
 }
 
+/* Tarifas y Reservas */
 img {
     max-width: 100%;
     height: auto;
@@ -78,6 +82,8 @@ img {
 ========================================================================== */
 
 /* --- 3.1 Encabezado y Navegación --- */
+
+/* Tarifas y Reservas */
 header {
     display: flex;
     flex-direction: column;
@@ -86,6 +92,7 @@ header {
     gap: 1rem;
 }
 
+/* Tarifas y Reservas */
 .header_left {
     display: flex;
     justify-content: space-around;
@@ -93,12 +100,14 @@ header {
     gap: 1rem;
 }
 
+/* Tarifas y Reservas */
 .header_right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
+/* Tarifas y Reservas */
 header img {
     padding: 0;
     border: 0;
@@ -109,16 +118,19 @@ header img {
     object-fit: cover;
 }
 
+/* Tarifas y Reservas */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Tarifas y Reservas */
 nav ul {
     padding: 0;
 }
 
+/* Tarifas y Reservas */
 #menu {
     display: flex;
     flex-direction: column;
@@ -128,17 +140,20 @@ nav ul {
     list-style: none;
 }
 
+/* Tarifas y Reservas */
 #menu a {
     color: var(--color-gris);
     text-decoration: none;
     font-weight: 600;
 }
 
+/* Tarifas y Reservas */
 #menu a.activo {
     color: var(--color-verde);
     border-bottom: 2px solid var(--color-verde);
 }
 
+/* Tarifas y Reservas */
 #menu a:hover,
 #menu a:focus {
     color: var(--color-naranja);
@@ -148,46 +163,30 @@ nav ul {
 
 /* --- 3.2 Componentes: Tarjetas, Botones y WhatsApp --- */
 
-/* Portada */
-
-/* Tarjetas de servicios */
-.contenedor-tarjeta {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    column-gap: 5rem;
-    border: 1px solid var(--color-gris);
-    border-radius: 8px;
-    background-color: #ffffff;
-}
-
-article p,
-article h3,
-article a {
-    margin: var(--spacing-sm);
-}
-
-#recorridos {
+/* Tarjetas Bootstrap (ajuste de la imagen superior) */
+.card-img-top {
     margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 /* Formulario y Contacto */
+
+/* Reservas */
 #contenedor-reservas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
+/* Reservas */
 #contenedor-formulario {
     display: grid;
     order: -1;
 }
 
+/* Reservas */
 .contenedor-campo-informacion {
     display: flex;
     flex-direction: column;
@@ -196,6 +195,8 @@ article a {
 }
 
 /* Botones Principales */
+
+/* Tarifas y Reservas */
 .boton-primario,
 button {
     display: inline-block;
@@ -210,6 +211,7 @@ button {
     margin: var(--spacing-md) 0;
 }
 
+/* Tarifas y Reservas */
 .boton-primario:hover,
 .boton-primario:focus,
 button:hover,
@@ -220,6 +222,8 @@ button:focus {
 }
 
 /* Botón flotante de WhatsApp */
+
+/* Tarifas y Reservas */
 .boton-whatsapp {
     position: fixed;
     bottom: 1.5rem;
@@ -232,6 +236,7 @@ button:focus {
     font-weight: 700;
 }
 
+/* Tarifas y Reservas */
 .boton-whatsapp:hover,
 .boton-whatsapp:focus {
     background-color: #128c7e;
@@ -239,6 +244,8 @@ button:focus {
 }
 
 /* --- 3.3 Tablas y Formularios --- */
+
+/* Tarifas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -246,17 +253,20 @@ table {
     font-size: smaller;
 }
 
+/* Tarifas */
 th,
 td {
     padding: 0.25rem;
     border: 1px solid var(--color-gris);
 }
 
+/* Tarifas */
 th {
     background-color: var(--color-azul);
     color: var(--color-crema);
 }
 
+/* Reservas */
 fieldset {
     border: 1px solid var(--color-gris);
     border-radius: 8px;
@@ -264,12 +274,14 @@ fieldset {
     margin-bottom: var(--spacing-md);
 }
 
+/* Reservas */
 label {
     display: block;
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
 }
 
+/* Reservas */
 select,
 textarea {
     width: 100%;
@@ -279,6 +291,7 @@ textarea {
     border-radius: 4px;
 }
 
+/* Reservas */
 input:focus,
 select:focus,
 textarea:focus {
@@ -287,6 +300,8 @@ textarea:focus {
 }
 
 /* --- 3.4 Pie de Página (Footer) --- */
+
+/* Tarifas y Reservas */
 footer {
     display: flex;
     flex-direction: column;
@@ -305,6 +320,8 @@ footer {
 4. MEDIA QUERIES: TABLET (768px en adelante)
 ========================================================================== */
 @media (min-width: 767px) {
+
+    /* Tarifas y Reservas */
     header {
         display: flex;
         flex-direction: row;
@@ -313,6 +330,7 @@ footer {
         flex-wrap: wrap;
     }
 
+    /* Tarifas y Reservas */
     .header_left {
         display: flex;
         justify-content: flex-start;
@@ -320,12 +338,14 @@ footer {
         gap: 1rem;
     }
 
+    /* Tarifas y Reservas */
     .header_right {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
+    /* Tarifas y Reservas */
     #menu {
         display: flex;
         flex-direction: row;
@@ -343,20 +363,16 @@ footer {
         gap: 1rem;
     }
 
-    /* Tarjetas de servicios */
-    .contenedor-tarjeta {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        gap: var(--spacing-md);
-    }
-
     /* Formulario y Contacto */
+
+    /* Reservas */
     #contenedor-reservas {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 5rem;
     }
 
+    /* Tarifas */
     table {
         width: 100%;
         border-collapse: collapse;
@@ -364,12 +380,14 @@ footer {
         font-size: 1rem;
     }
 
+    /* Tarifas */
     th,
     td {
         padding: var(--spacing-sm);
         border: 1px solid var(--color-gris);
     }
 
+    /* Tarifas y Reservas */
     footer {
         display: flex;
         flex-direction: row;
@@ -389,6 +407,8 @@ footer {
 5. MEDIA QUERIES: ESCRITORIO (1200px en adelante)
 ========================================================================== */
 @media (min-width: 1200px) {
+
+    /* Tarifas y Reservas */
     header {
         display: flex;
         flex-direction: row;
@@ -397,6 +417,7 @@ footer {
         flex-wrap: wrap;
     }
 
+    /* Tarifas y Reservas */
     .header_left {
         display: flex;
         justify-content: flex-start;
@@ -404,12 +425,14 @@ footer {
         gap: 1rem;
     }
 
+    /* Tarifas y Reservas */
     .header_right {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
+    /* Tarifas y Reservas */
     #menu {
         display: flex;
         flex-direction: row;
@@ -427,20 +450,16 @@ footer {
         gap: 1rem;
     }
 
-    /* Tarjetas de servicios */
-    .contenedor-tarjeta {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        gap: var(--spacing-md);
-    }
-
     /* Formulario y Contacto */
+
+    /* Reservas */
     #contenedor-reservas {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 5rem;
     }
 
+    /* Tarifas */
     table {
         width: 100%;
         border-collapse: collapse;
@@ -448,12 +467,14 @@ footer {
         font-size: 1rem;
     }
 
+    /* Tarifas */
     th,
     td {
         padding: var(--spacing-sm);
         border: 1px solid var(--color-gris);
     }
 
+    /* Tarifas y Reservas */
     footer {
         display: flex;
         flex-direction: row;
