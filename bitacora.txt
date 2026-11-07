@@ -266,3 +266,64 @@ Conflictos entre los estilos y Bootstrap:
 - Las imágenes de las tarjetas no se acoplaban a la parte superior, tuve que borrar la propiedad de margin: 7px para poder solucionar esto.
 - Los bordes de las imágenes de las tarjetas quedaban todos redondos, tuve que quitar los bordes de esta clase de tarjetas y aplicarles unicamente bordes a las esquinas superiores.
 - Los elementos dentro de las tarjetas quedaban mal acomodados debido a márgenes definidas en la stylesheet, la solución fue borrar estas márgenes para que Bootstrap se encargue.
+
+MiniReto 8 - Semana 2:
+
+Comparativa: css puro vs Bootstrap
+
+1. LINEAS DE style.css
+  v1.5: 490 lineas
+  Version actual: 335 lineas
+  Diferencia: 155 lineas menos
+
+2. TIEMPO INVERTIDO EN CADA VERSION
+
+  v1.5: aprox. 1 dia de trabajo
+  Version actual:  aprox. 4 horas en total
+
+3. VENTAJAS OBSERVADAS (BOOTSTRAP)
+
+  - Menos CSS propio: 335 lineas frente a 490.
+  - El diseno en columnas lo resuelve la grilla (row / col-*) en
+    lugar de reglas escritas a mano. Con esto se dejaron de usar
+    #contenedor-reservas, .contenedor-campo-informacion y
+    #contenedor-portada, junto con sus versiones en media queries.
+  - Responsive con menos esfuerzo: los puntos de quiebre ya vienen
+    definidos y son los mismos en todas las paginas.
+  - El reset de Bootstrap (Reboot) ya incluye box-sizing, margenes de
+    titulos y parrafos y border-collapse de tablas, asi que no hay que
+    volver a escribirlos.
+  - Componentes listos, como las tarjetas (cards), que
+    solo necesitaron un pequeño cambio.
+  - Menor tiempo de desarrollo (aprox. 4 horas frente a 1 dia).
+
+
+4. DESVENTAJAS OBSERVADAS
+
+  - Dependencia externa: hay que cargar el CSS y el JS de Bootstrap
+    (CDN) aunque solo se use una parte de la libreria.
+  - El HTML queda con mas clases (row, col-12, col-md-6, g-4, gx-3,
+    align-items-center, py-4...) y hay que conocerlas o consultarlas.
+  - El CSS propio y Bootstrap pueden chocar. Ejemplo: la regla
+    display: grid de #contenedor-portada habria roto el .row de
+    Bootstrap, por eso hubo que quitarla al migrar la portada.
+  - Siguen haciendo falta ajustes propios sobre Bootstrap:
+    .card-img-top (por el margen y el borde redondeado de img), el
+    color de los titulos dentro de las tarjetas y los botones propios.
+  - Menos control directo del layout: hay que ceñirse a la grilla de
+    12 columnas.
+
+
+5. CONCLUSION
+---------------------------------------------------------------------
+  Para este sitio Bootstrap compensa: el CSS propio bajo de 490 a 335 lineas
+  y el trabajo paso de aproximadamente un dia a
+  unas 4 horas. La estructura y el comportamiento responsive quedaron
+  a cargo de la grilla, y el CSS propio se limito a lo que da
+  identidad al sitio: variables de color y tipografia, encabezado,
+  menu, botones, tablas y pie de pagina.
+
+  A cambio hay que depender de una libreria externa, un HTML con mas
+  clases y algunos ajustes para que Bootstrap y el CSS propio convivan.
+  La mejor combinacion fue usar Bootstrap para la estructura y el
+  responsive, y CSS propio solo para el estilo propio de la marca.

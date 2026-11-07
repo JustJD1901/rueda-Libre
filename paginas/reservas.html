@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -25,9 +27,9 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div id="contenedor-reservas">
-            <div>
+    <main class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-4 mt-md-5 pt-md-5">
                 <aside>
                     <p><strong>Nuestro horario de atención:</strong></p>
                     <dl>
@@ -47,28 +49,28 @@
                 </aside>
                 <p><strong>Nuestro correo de contacto: </strong><a href="mailto:rueda_libre@gmail.com">rueda_libre@gmail.com</a></p>
             </div>
-            <div id="contenedor-formulario">
+            <div class="col-12 col-md-8" id="contenedor-formulario">
                 <section>
                     <h2>Formulario de reserva</h2>
-                    <form action="" method="post">
+                    <form action="" method="post" class="mt-4">
                         <fieldset>
                             <legend>Tus datos</legend>
-                            <div class="contenedor-campo-informacion">
-                                <div>
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6">
                                     <label for="nombre">Nombre Completo</label>
                                     <input type="text" id="nombre" name="nombre" minlength="3" required>
                                 </div>
-                                <div>
+                                <div class="col-12 col-md-6">
                                     <label for="documento">Número de documento</label>
                                     <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}" required>
                                 </div>
                             </div>
-                            <div class="contenedor-campo-informacion">
-                                <div>
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6">
                                     <label for="email">Correo electrónico</label>
                                     <input type="email" id="email" name="email" required>
                                 </div>
-                                <div>
+                                <div class="col-12 col-md-6">
                                     <label for="celular">Número de celular</label>
                                     <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" required>
                                 </div>
@@ -138,5 +140,9 @@
     <a href="https://wa.me/573000000000" target="_blank" class="boton-whatsapp" aria-label="Contactar por WhatsApp">
         WhatsApp
     </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

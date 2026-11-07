@@ -1,5 +1,5 @@
 /* ==========================================================================
-1. VARIABLES GLOBALES Y RESET
+1. VARIABLES GLOBALES
 ========================================================================== */
 
 /* Tarifas y Reservas */
@@ -16,11 +16,6 @@
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
-}
-
-/* Tarifas y Reservas */
-* {
-    box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -48,19 +43,12 @@ h2,
 h3 {
     font-family: var(--font-titulos);
     color: var(--color-azul);
-    margin-bottom: var(--spacing-sm);
 }
 
 /* Tarifas y Reservas */
 h1 {
     margin: 0;
     padding: 0;
-}
-
-/* Tarifas y Reservas */
-p,
-ul {
-    margin-bottom: var(--spacing-md);
 }
 
 /* Tarifas y Reservas */
@@ -174,24 +162,8 @@ nav ul {
 /* Formulario y Contacto */
 
 /* Reservas */
-#contenedor-reservas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-/* Reservas */
 #contenedor-formulario {
-    display: grid;
     order: -1;
-}
-
-/* Reservas */
-.contenedor-campo-informacion {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: var(--spacing-md);
 }
 
 /* Botones Principales */
@@ -248,7 +220,6 @@ button:focus {
 /* Tarifas */
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-bottom: var(--spacing-lg);
     font-size: smaller;
 }
@@ -317,66 +288,24 @@ footer {
 }
 
 /* ==========================================================================
-4. MEDIA QUERIES: TABLET (768px en adelante)
+4. MEDIA QUERIES: TABLET (768px en adelante) Solo se redefine lo que cambia respecto al diseño móvil.
 ========================================================================== */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
     /* Tarifas y Reservas */
     header {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         flex-wrap: wrap;
     }
 
     /* Tarifas y Reservas */
     .header_left {
-        display: flex;
         justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    /* Tarifas y Reservas */
-    .header_right {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    /* Tarifas y Reservas */
-    #menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        list-style: none;
-    }
-
-    /* Portada */
-    #contenedor-portada {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    /* Formulario y Contacto */
-
-    /* Reservas */
-    #contenedor-reservas {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 5rem;
     }
 
     /* Tarifas */
     table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: var(--spacing-lg);
         font-size: 1rem;
     }
 
@@ -384,22 +313,12 @@ footer {
     th,
     td {
         padding: var(--spacing-sm);
-        border: 1px solid var(--color-gris);
     }
 
     /* Tarifas y Reservas */
     footer {
-        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
         gap: 1.5rem;
-        flex-wrap: wrap;
-        border-top: 1px solid var(--color-gris);
-        padding-top: var(--spacing-md);
-        margin-top: var(--spacing-lg);
-        color: var(--color-gris);
-        font-size: 0.9rem;
     }
 }
 
@@ -409,83 +328,7 @@ footer {
 @media (min-width: 1200px) {
 
     /* Tarifas y Reservas */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    /* Tarifas y Reservas */
-    .header_left {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    /* Tarifas y Reservas */
-    .header_right {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    /* Tarifas y Reservas */
     #menu {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        list-style: none;
-    }
-
-    /* Portada */
-    #contenedor-portada {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    /* Formulario y Contacto */
-
-    /* Reservas */
-    #contenedor-reservas {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 5rem;
-    }
-
-    /* Tarifas */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: var(--spacing-lg);
-        font-size: 1rem;
-    }
-
-    /* Tarifas */
-    th,
-    td {
-        padding: var(--spacing-sm);
-        border: 1px solid var(--color-gris);
-    }
-
-    /* Tarifas y Reservas */
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        border-top: 1px solid var(--color-gris);
-        padding-top: var(--spacing-md);
-        margin-top: var(--spacing-lg);
-        color: var(--color-gris);
-        font-size: 0.9rem;
     }
 }
