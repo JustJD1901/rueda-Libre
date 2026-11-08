@@ -21,12 +21,19 @@
             <h1>Rueda Libre</h1>
         </div>
         <div class="header_right">
-            <nav>
-                <ul id="menu">
-                    <li><a href="index.html" class="activo">Inicio</a></li>
-                    <li><a href="paginas/tarifas.html">Tarifas y Rutas</a></li>
-                    <li><a href="paginas/reservas.html">Reservas</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button id="boton-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" id="menu">
+                            <li class="nav-item"><a href="index.html" aria-current="page" class="nav-link active">Inicio</a></li>
+                            <li class="nav-item"><a href="paginas/tarifas.html" class="nav-link">Tarifas y Rutas</a></li>
+                            <li class="nav-item"><a href="paginas/reservas.html" class="nav-link">Reservas</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -43,7 +50,7 @@
                     ágilmente con asistencia eléctrica, tenemos la bicicleta perfecta
                     esperándote. Elige tu ruta, ponte el casco y prepárate para rodar.
                 </p>
-                <p><a href="#encuentranos" class="boton-primario">Encuéntranos</a></p>
+                <p><a href="#encuentranos" class="btn btn-outline-success">Encuéntranos</a></p>
             </div>
             <div class="col-12 col-md-8">
                 <img src="img/portada.jpeg" alt="Portada Rueda Libre" id="imagen-portada">
@@ -106,7 +113,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Urbana Clásica</h3>
                             <p class="card-text">Cómoda y liviana para las ciclorrutas. <br />$10.000 x hora</p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -119,7 +126,7 @@
                             <p class="card-text">Se dobla en segundos; ideal para combinar con el metro.
                                 <br />$12.000 x hora
                             </p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -131,7 +138,7 @@
                             <h3 class="card-title">Montaña Trail</h3>
                             <p class="card-text">Suspensión delantera y 21 cambios para las subidas. <br />$15.000 x
                                 hora</p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -142,7 +149,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Gravel Aventura</h3>
                             <p class="card-text">Para rutas mixtas de asfalto y destapado. <br />$18.000 x hora</p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -154,7 +161,7 @@
                             <h3 class="card-title">Eléctrica Urbana</h3>
                             <p class="card-text">Asistencia eléctrica con 45 km de autonomía. <br />$18.000 x hora
                             </p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -165,7 +172,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Infantil</h3>
                             <p class="card-text">Para niños de 6 a 10 años. <br />$8.000 x hora</p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -177,7 +184,7 @@
                             <h3 class="card-title">Tándem</h3>
                             <p class="card-text">Para dos personas; perfecta para pasear en pareja <br />$20.000 x
                                 hora</p>
-                            <a href="paginas/reservas.html" class="btn btn-primary">Reservar</a>
+                            <a href="paginas/reservas.html" class="btn btn-primary btn-sm">Reservar</a>
                         </div>
                     </article>
                 </div>
@@ -261,7 +268,7 @@
                             </p>
                             <p>
                                 Conoce los detalles de
-                                <a href="paginas/tarifas.html#recorridos_guiados" id="recorridos">nuestros recorridos</a>.
+                                <a href="paginas/tarifas.html#recorridos_guiados" class="btn btn-primary btn-sm" id="recorridos">nuestros recorridos</a>
                             </p>
                         </div>
                     </article>
@@ -281,10 +288,10 @@
                     </article>
                 </div>
             </div>
-            <a href="paginas/reservas.html" class="boton-primario">Reservar ahora</a>
+            <a href="paginas/reservas.html" class="btn btn-primary">Reservar ahora</a>
         </section>
 
-        <section>
+        <section class="mt-4">
             <h2>¿Cómo alquilar?</h2>
             <ol>
                 <li>
@@ -313,17 +320,17 @@
                     ciclorrutas.
                 </li>
             </ul>
-            <p>Estas son nuestras <a href="paginas/tarifas.html">tarifas</a>.</p>
+            <p>Estas son nuestras <a href="paginas/tarifas.html" class="btn btn-primary btn-sm">tarifas</a></p>
         </section>
 
         <section>
             <h2 id="encuentranos">Encuéntranos</h2>
-            <img src="img/ruta.jpeg" alt="Imagen Ilustrativa Ruta: Reto de Palmas" width="500" height="300" />
+            <img src="img/ruta.jpeg" alt="Imagen Ilustrativa Ruta: Reto de Palmas" width="500" height="300"/>
             <p>
                 Estamos ubicados a pocos pasos de la estación Poblado del Metro,
                 listos para entregarte tu bicicleta.<br />
-                <a href="https://maps.app.goo.gl/J8Z7sCLFVsoX4RQG8" target="_blank">Nuestra ubicación</a><br />
-                <a href="mailto:rueda_libre@gmail.com">Contáctanos</a>
+                <a href="https://maps.app.goo.gl/J8Z7sCLFVsoX4RQG8" target="_blank" class="btn btn-outline-success btn-sm mt-2">Nuestra ubicación</a><br />
+                <a href="mailto:rueda_libre@gmail.com" class="btn btn-outline-success btn-sm mt-2">Contáctanos</a>
             </p>
         </section>
     </main>

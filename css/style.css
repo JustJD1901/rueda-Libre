@@ -1,8 +1,19 @@
 /* ==========================================================================
+   LEYENDA DE USO
+   Cada regla indica en qué páginas se usa:
+   - Inicio   = index.html
+   - Tarifas  = paginas/tarifas.html
+   - Reservas = paginas/reservas.html
+   Etiquetas: "Usada en las 3 páginas", "Usada solo en 2 páginas" y
+   "Usada solo en 1 página", siempre con el nombre de la página.
+   ========================================================================== */
+
+/* ==========================================================================
 1. VARIABLES GLOBALES
 ========================================================================== */
 
-/* Tarifas y Reservas */
+/* Variables globales (colores, tipografía y espaciado)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 :root {
     --color-verde: #1e7a4f;
     --color-naranja: #f39a2b;
@@ -22,7 +33,8 @@
 2. ESTILOS BASE Y TIPOGRAFÍA
    ========================================================================== */
 
-/* Tarifas y Reservas */
+/* Cuerpo de la página (fondo, fuente, color y espaciado)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 body {
     background-color: var(--color-crema);
     font-family: var(--font-cuerpo);
@@ -31,13 +43,15 @@ body {
     padding-bottom: 5rem;
 }
 
-/* Tarifas y Reservas */
+/* Contenido principal (ancho máximo y centrado)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 main {
     max-width: 70rem;
     margin: 0 auto;
 }
 
-/* Tarifas y Reservas */
+/* Títulos (tipografía y color)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 h1,
 h2,
 h3 {
@@ -45,13 +59,15 @@ h3 {
     color: var(--color-azul);
 }
 
-/* Tarifas y Reservas */
+/* Título del encabezado (sin margen ni relleno)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 h1 {
     margin: 0;
     padding: 0;
 }
 
-/* Tarifas y Reservas */
+/* Imágenes (responsivas, bordes redondeados y margen)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 img {
     max-width: 100%;
     height: auto;
@@ -59,6 +75,8 @@ img {
     margin: 7px;
 }
 
+/* Imagen de portada (sin margen)
+   Usada solo en 1 página: Inicio */
 #imagen-portada {
     max-width: 100%;
     height: auto;
@@ -71,31 +89,34 @@ img {
 
 /* --- 3.1 Encabezado y Navegación --- */
 
-/* Tarifas y Reservas */
+/* Encabezado (logo a la izquierda y menú a la derecha)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-/* Tarifas y Reservas */
+/* Encabezado: bloque izquierdo (logo y título)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 .header_left {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     gap: 1rem;
 }
 
-/* Tarifas y Reservas */
+/* Encabezado: bloque derecho (menú de navegación)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 .header_right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-/* Tarifas y Reservas */
+/* Logo del encabezado
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 header img {
     padding: 0;
     border: 0;
@@ -106,19 +127,8 @@ header img {
     object-fit: cover;
 }
 
-/* Tarifas y Reservas */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Tarifas y Reservas */
-nav ul {
-    padding: 0;
-}
-
-/* Tarifas y Reservas */
+/* Menú de navegación (lista de enlaces)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 #menu {
     display: flex;
     flex-direction: column;
@@ -128,20 +138,16 @@ nav ul {
     list-style: none;
 }
 
-/* Tarifas y Reservas */
+/* Enlaces del menú
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 #menu a {
     color: var(--color-gris);
     text-decoration: none;
     font-weight: 600;
 }
 
-/* Tarifas y Reservas */
-#menu a.activo {
-    color: var(--color-verde);
-    border-bottom: 2px solid var(--color-verde);
-}
-
-/* Tarifas y Reservas */
+/* Enlaces del menú: hover y foco
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 #menu a:hover,
 #menu a:focus {
     color: var(--color-naranja);
@@ -151,7 +157,8 @@ nav ul {
 
 /* --- 3.2 Componentes: Tarjetas, Botones y WhatsApp --- */
 
-/* Tarjetas Bootstrap (ajuste de la imagen superior) */
+/* Imagen superior de las tarjetas de Bootstrap (sin margen y esquinas superiores redondeadas)
+   Usada solo en 1 página: Inicio */
 .card-img-top {
     margin: 0;
     border-radius: 0;
@@ -159,17 +166,14 @@ nav ul {
     border-top-left-radius: 5px;
 }
 
-/* Formulario y Contacto */
-
-/* Reservas */
+/* Columna del formulario (se muestra primero)
+   Usada solo en 1 página: Reservas */
 #contenedor-formulario {
     order: -1;
 }
 
-/* Botones Principales */
-
-/* Tarifas y Reservas */
-.boton-primario,
+/* Botones (margen, colores y relleno base)
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 button {
     display: inline-block;
     background-color: var(--color-verde);
@@ -183,19 +187,32 @@ button {
     margin: var(--spacing-md) 0;
 }
 
-/* Tarifas y Reservas */
-.boton-primario:hover,
-.boton-primario:focus,
+/* Botones: hover y foco
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 button:hover,
 button:focus {
     background-color: var(--color-naranja);
     color: var(--color-azul);
+    outline: 1px solid var(--color-azul);
+}
+
+/* Botón del menú (hamburguesa): hover y foco
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+#boton-menu:hover,
+#boton-menu:focus {
+    background-color: var(--color-crema);
+    color: var(--color-azul);
     outline: 3px solid var(--color-azul);
 }
 
-/* Botón flotante de WhatsApp */
+/* Navbar de Bootstrap: centra el contenido de su contenedor
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.navbar>.container-fluid {
+    justify-content: center;
+}
 
-/* Tarifas y Reservas */
+/* Botón flotante de WhatsApp
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 .boton-whatsapp {
     position: fixed;
     bottom: 1.5rem;
@@ -208,7 +225,8 @@ button:focus {
     font-weight: 700;
 }
 
-/* Tarifas y Reservas */
+/* Botón flotante de WhatsApp: hover y foco
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 .boton-whatsapp:hover,
 .boton-whatsapp:focus {
     background-color: #128c7e;
@@ -217,27 +235,31 @@ button:focus {
 
 /* --- 3.3 Tablas y Formularios --- */
 
-/* Tarifas */
+/* Tablas (ancho, margen inferior y tamaño de texto)
+   Usada solo en 1 página: Tarifas */
 table {
     width: 100%;
     margin-bottom: var(--spacing-lg);
     font-size: smaller;
 }
 
-/* Tarifas */
+/* Celdas de tabla (relleno y borde)
+   Usada solo en 1 página: Tarifas */
 th,
 td {
     padding: 0.25rem;
     border: 1px solid var(--color-gris);
 }
 
-/* Tarifas */
+/* Encabezados de tabla (fondo y color)
+   Usada solo en 1 página: Tarifas */
 th {
     background-color: var(--color-azul);
     color: var(--color-crema);
 }
 
-/* Reservas */
+/* Grupos de campos del formulario
+   Usada solo en 1 página: Reservas */
 fieldset {
     border: 1px solid var(--color-gris);
     border-radius: 8px;
@@ -245,14 +267,16 @@ fieldset {
     margin-bottom: var(--spacing-md);
 }
 
-/* Reservas */
+/* Etiquetas de los campos del formulario
+   Usada solo en 1 página: Reservas */
 label {
     display: block;
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
 }
 
-/* Reservas */
+/* Listas desplegables y área de comentarios
+   Usada solo en 1 página: Reservas */
 select,
 textarea {
     width: 100%;
@@ -262,7 +286,8 @@ textarea {
     border-radius: 4px;
 }
 
-/* Reservas */
+/* Campos del formulario: foco
+   Usada solo en 1 página: Reservas */
 input:focus,
 select:focus,
 textarea:focus {
@@ -272,7 +297,8 @@ textarea:focus {
 
 /* --- 3.4 Pie de Página (Footer) --- */
 
-/* Tarifas y Reservas */
+/* Pie de página
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 footer {
     display: flex;
     flex-direction: column;
@@ -288,34 +314,33 @@ footer {
 }
 
 /* ==========================================================================
-4. MEDIA QUERIES: TABLET (768px en adelante) Solo se redefine lo que cambia respecto al diseño móvil.
+4. MEDIA QUERIES: TABLET (768px en adelante)
+   Solo se redefine lo que cambia respecto al diseño móvil.
 ========================================================================== */
 @media (min-width: 768px) {
 
-    /* Tarifas y Reservas */
+    /* Encabezado: separa logo y menú, y permite que bajen de línea
+       Usada en las 3 páginas: Inicio, Tarifas y Reservas */
     header {
-        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    /* Tarifas y Reservas */
-    .header_left {
-        justify-content: flex-start;
-    }
-
-    /* Tarifas */
+    /* Tablas: texto de tamaño normal
+       Usada solo en 1 página: Tarifas */
     table {
         font-size: 1rem;
     }
 
-    /* Tarifas */
+    /* Celdas de tabla: más relleno
+       Usada solo en 1 página: Tarifas */
     th,
     td {
         padding: var(--spacing-sm);
     }
 
-    /* Tarifas y Reservas */
+    /* Pie de página: elementos en fila
+       Usada en las 3 páginas: Inicio, Tarifas y Reservas */
     footer {
         flex-direction: row;
         gap: 1.5rem;
@@ -323,11 +348,12 @@ footer {
 }
 
 /* ==========================================================================
-5. MEDIA QUERIES: ESCRITORIO (1200px en adelante)
+5. MEDIA QUERIES: ESCRITORIO (992px en adelante)
 ========================================================================== */
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
-    /* Tarifas y Reservas */
+    /* Menú de navegación: enlaces en fila
+       Usada en las 3 páginas: Inicio, Tarifas y Reservas */
     #menu {
         flex-direction: row;
     }
