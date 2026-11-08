@@ -1,14 +1,4 @@
 /* ==========================================================================
-   LEYENDA DE USO
-   Cada regla indica en qué páginas se usa:
-   - Inicio   = index.html
-   - Tarifas  = paginas/tarifas.html
-   - Reservas = paginas/reservas.html
-   Etiquetas: "Usada en las 3 páginas", "Usada solo en 2 páginas" y
-   "Usada solo en 1 página", siempre con el nombre de la página.
-   ========================================================================== */
-
-/* ==========================================================================
 1. VARIABLES GLOBALES
 ========================================================================== */
 
@@ -83,6 +73,12 @@ img {
     margin: 0;
 }
 
+/* Imágenes del carrusel (sin margen)
+   Usada solo en 1 página: Inicio */
+.imagen-carrusel {
+    margin: 0;
+}
+
 /* ==========================================================================
 3. DISEÑO MÓVIL (MOBILE FIRST - ESTILOS POR DEFECTO)
 ========================================================================== */
@@ -127,6 +123,12 @@ header img {
     object-fit: cover;
 }
 
+/* Navbar de Bootstrap: centra el contenido de su contenedor
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.navbar>.container-fluid {
+    justify-content: center;
+}
+
 /* Menú de navegación (lista de enlaces)
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 #menu {
@@ -155,7 +157,16 @@ header img {
     outline-offset: 4px;
 }
 
-/* --- 3.2 Componentes: Tarjetas, Botones y WhatsApp --- */
+/* Botón del menú (hamburguesa): hover y foco
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+#boton-menu:hover,
+#boton-menu:focus {
+    background-color: var(--color-crema);
+    color: var(--color-azul);
+    outline: 3px solid var(--color-azul);
+}
+
+/* --- 3.2 Componentes: Tarjetas, Carrusel, Botones y WhatsApp --- */
 
 /* Imagen superior de las tarjetas de Bootstrap (sin margen y esquinas superiores redondeadas)
    Usada solo en 1 página: Inicio */
@@ -166,10 +177,21 @@ header img {
     border-top-left-radius: 5px;
 }
 
-/* Columna del formulario (se muestra primero)
-   Usada solo en 1 página: Reservas */
-#contenedor-formulario {
-    order: -1;
+/* Carrusel: botones anterior y siguiente (sin margen)
+   Usada solo en 1 página: Inicio */
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 0;
+}
+
+/* Carrusel: botones anterior y siguiente, hover y foco
+   Usada solo en 1 página: Inicio */
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+    background-color: transparent;
+    outline: 1px solid black;
 }
 
 /* Botones (margen, colores y relleno base)
@@ -194,21 +216,6 @@ button:focus {
     background-color: var(--color-naranja);
     color: var(--color-azul);
     outline: 1px solid var(--color-azul);
-}
-
-/* Botón del menú (hamburguesa): hover y foco
-   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-#boton-menu:hover,
-#boton-menu:focus {
-    background-color: var(--color-crema);
-    color: var(--color-azul);
-    outline: 3px solid var(--color-azul);
-}
-
-/* Navbar de Bootstrap: centra el contenido de su contenedor
-   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-.navbar>.container-fluid {
-    justify-content: center;
 }
 
 /* Botón flotante de WhatsApp
@@ -256,6 +263,12 @@ td {
 th {
     background-color: var(--color-azul);
     color: var(--color-crema);
+}
+
+/* Columna del formulario (se muestra primero)
+   Usada solo en 1 página: Reservas */
+#contenedor-formulario {
+    order: -1;
 }
 
 /* Grupos de campos del formulario
