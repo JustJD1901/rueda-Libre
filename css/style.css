@@ -1,43 +1,62 @@
 /* ==========================================================================
-1. VARIABLES GLOBALES
-========================================================================== */
+   1. VARIABLES
+   ========================================================================== */
 
-/* Variables globales (colores, tipografía y espaciado)
+/* 1.1 Variables de marca (colores, tipografía y espaciado)
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 :root {
-    --color-verde: #1e7a4f;
-    --color-naranja: #f39a2b;
-    --color-azul: #14213d;
-    --color-crema: #faf6ef;
-    --color-gris: #5b6470;
+   --color-verde: #1e7a4f;
+   --color-naranja: #f39a2b;
+   --color-azul: #14213d;
+   --color-crema: #faf6ef;
+   --color-gris: #5b6470;
 
-    --font-titulos: "Montserrat", system-ui, -apple-system, sans-serif;
-    --font-cuerpo: "Open Sans", Arial, Helvetica, sans-serif;
+   --font-titulos: "Montserrat", system-ui, -apple-system, sans-serif;
+   --font-cuerpo: "Open Sans", Arial, Helvetica, sans-serif;
 
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
+   --spacing-sm: 0.5rem;
+   --spacing-md: 1rem;
+   --spacing-lg: 2rem;
 }
 
+/* 1.2 Variables de Bootstrap sobreescritas (color primario, fuente, enlaces y bordes)
+   Los valores RGB van literales porque Bootstrap los usa dentro de rgba()
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+:root {
+   --bs-primary: var(--color-verde);
+   --bs-primary-rgb: 30, 122, 79;
+
+   --bs-body-font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+   --bs-link-color: var(--color-verde);
+   --bs-link-color-rgb: 30, 122, 79;
+   --bs-link-hover-color: var(--color-naranja);
+   --bs-link-hover-color-rgb: 243, 154, 43;
+
+   --bs-border-radius: 0.5rem;
+}
+
+
 /* ==========================================================================
-2. ESTILOS BASE Y TIPOGRAFÍA
+   2. ESTILOS BASE Y TIPOGRAFÍA
    ========================================================================== */
 
 /* Cuerpo de la página (fondo, fuente, color y espaciado)
+   El relleno inferior grande (para el botón de WhatsApp) se agrega desde 768px, en la sección 4
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 body {
-    background-color: var(--color-crema);
-    font-family: var(--font-cuerpo);
-    color: var(--color-azul);
-    padding: var(--spacing-md);
-    padding-bottom: 5rem;
+   min-height: 100vh;
+   background-color: var(--color-crema);
+   font-family: var(--font-cuerpo);
+   color: var(--color-azul);
+   padding: var(--spacing-md);
 }
 
 /* Contenido principal (ancho máximo y centrado)
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 main {
-    max-width: 70rem;
-    margin: 0 auto;
+   max-width: 70rem;
+   margin: 0 auto;
 }
 
 /* Títulos (tipografía y color)
@@ -45,143 +64,163 @@ main {
 h1,
 h2,
 h3 {
-    font-family: var(--font-titulos);
-    color: var(--color-azul);
+   font-family: var(--font-titulos);
+   color: var(--color-azul);
 }
 
 /* Título del encabezado (sin margen ni relleno)
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 h1 {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
-/* Imágenes (responsivas, bordes redondeados y margen)
+/* CLASE PROPIA:
+Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.titulo-subrayado {
+   display: inline-block;
+   padding-bottom: 0.25rem;
+   border-bottom: 4px solid var(--color-naranja);
+}
+
+/* Imágenes:
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 7px;
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   margin: 7px;
 }
 
-/* Imagen de portada (sin margen)
+/* Imagen de portada:
    Usada solo en 1 página: Inicio */
 #imagen-portada {
-    max-width: 100%;
-    height: auto;
-    margin: 0;
+   max-width: 100%;
+   height: auto;
+   margin: 0;
 }
 
-/* Imágenes del carrusel (sin margen)
+/* Imágenes del carrusel:
    Usada solo en 1 página: Inicio */
 .imagen-carrusel {
-    margin: 0;
+   margin: 0;
 }
+
 
 /* ==========================================================================
 3. DISEÑO MÓVIL (MOBILE FIRST - ESTILOS POR DEFECTO)
 ========================================================================== */
 
-/* --- 3.1 Encabezado y Navegación --- */
+/* --- 3.1 Encabezado y navegación --- */
 
-/* Encabezado (logo a la izquierda y menú a la derecha)
+/* CLASE PROPIA: encabezado con fondo azul y esquinas redondeadas
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.encabezado-marca {
+   background-color: var(--color-azul);
+   border-radius: var(--bs-border-radius);
+   padding: var(--spacing-sm);
 }
 
-/* Encabezado: bloque izquierdo (logo y título)
+/* Encabezado: título de la marca en crema para que se lea sobre el fondo azul
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-.header_left {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
+.encabezado-marca h1 {
+   color: var(--color-crema);
 }
 
-/* Encabezado: bloque derecho (menú de navegación)
+/* Navbar:.
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-.header_right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.encabezado-marca .navbar {
+   --bs-navbar-color: var(--color-crema);
+   --bs-navbar-hover-color: var(--color-naranja);
+   --bs-navbar-active-color: var(--color-naranja);
+   --bs-navbar-toggler-border-color: rgba(250, 246, 239, 0.5);
+   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23faf6ef' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Logo del encabezado
+/* Marca del navbar (logo + título) en móvil:
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-header img {
-    padding: 0;
-    border: 0;
-    width: 20%;
-    max-width: 20rem;
-    min-height: 10vh;
-    margin: 0;
-    object-fit: cover;
+.navbar-brand {
+   flex: 1 1 0;
+   min-width: 0;
+   margin-right: 0;
+   white-space: normal;
 }
 
-/* Navbar de Bootstrap: centra el contenido de su contenedor
+/* Logo dentro del navbar-brand
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-.navbar>.container-fluid {
-    justify-content: center;
+.navbar-brand img {
+   flex-shrink: 0;
+   width: 3.5rem;
+   height: 3.5rem;
+   object-fit: cover;
+   margin: 0;
 }
 
-/* Menú de navegación (lista de enlaces)
+/* Enlaces del menú: texto más grueso
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-#menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    list-style: none;
+.encabezado-marca .nav-link {
+   font-weight: 600;
 }
 
-/* Enlaces del menú
+/* Enlaces del menú: contorno visible al navegar con teclado
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-#menu a {
-    color: var(--color-gris);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* Enlaces del menú: hover y foco
-   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-#menu a:hover,
-#menu a:focus {
-    color: var(--color-naranja);
-    outline: 2px dashed var(--color-naranja);
-    outline-offset: 4px;
+.encabezado-marca .nav-link:focus-visible {
+   outline: 2px dashed var(--color-naranja);
+   outline-offset: 4px;
 }
 
 /* Botón del menú (hamburguesa): hover y foco
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 #boton-menu:hover,
 #boton-menu:focus {
-    background-color: var(--color-crema);
-    color: var(--color-azul);
-    outline: 3px solid var(--color-azul);
+   outline: 3px solid var(--color-naranja);
 }
 
-/* --- 3.2 Componentes: Tarjetas, Carrusel, Botones y WhatsApp --- */
+/* --- 3.2 Componentes: botones, tarjetas, carrusel y WhatsApp --- */
 
-/* Imagen superior de las tarjetas de Bootstrap (sin margen y esquinas superiores redondeadas)
-   Usada solo en 1 página: Inicio */
+/* Botón principal (Verde Ruta): estados normal, hover y activo con variables de Bootstrap
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.btn-primary {
+   --bs-btn-bg: var(--color-verde);
+   --bs-btn-border-color: var(--color-verde);
+   --bs-btn-color: #fff;
+
+   --bs-btn-hover-bg: #196843;
+   --bs-btn-hover-border-color: #196843;
+   --bs-btn-hover-color: #fff;
+
+   --bs-btn-active-bg: #155938;
+   --bs-btn-active-border-color: #155938;
+   --bs-btn-active-color: #fff;
+}
+
+/* CLASE PROPIA:*/
+.btn-naranja {
+   --bs-btn-bg: var(--color-naranja);
+   --bs-btn-border-color: var(--color-naranja);
+   --bs-btn-color: var(--color-azul);
+
+   --bs-btn-hover-bg: #e08a1c;
+   --bs-btn-hover-border-color: #e08a1c;
+   --bs-btn-hover-color: var(--color-azul);
+
+   --bs-btn-active-bg: #c97a14;
+   --bs-btn-active-border-color: #c97a14;
+   --bs-btn-active-color: var(--color-azul);
+}
+
 .card-img-top {
-    margin: 0;
-    border-radius: 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+   margin: 0;
+   border-radius: 0;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
 }
 
-/* Carrusel: botones anterior y siguiente (sin margen)
+/* Carrusel: botones anterior y siguiente:
    Usada solo en 1 página: Inicio */
 .carousel-control-prev,
 .carousel-control-next {
-    margin: 0;
+   margin: 0;
 }
 
 /* Carrusel: botones anterior y siguiente, hover y foco
@@ -190,113 +229,89 @@ header img {
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-    background-color: transparent;
-    outline: 1px solid black;
+   background-color: transparent;
+   outline: 1px solid black;
 }
 
-/* Botones (margen, colores y relleno base)
-   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-button {
-    display: inline-block;
-    background-color: var(--color-verde);
-    color: #ffffff;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    margin: var(--spacing-md) 0;
-}
-
-/* Botones: hover y foco
-   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-button:hover,
-button:focus {
-    background-color: var(--color-naranja);
-    color: var(--color-azul);
-    outline: 1px solid var(--color-azul);
-}
-
-/* Botón flotante de WhatsApp
+/* Botón flotante de WhatsApp (fijo en la esquina inferior derecha)
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 .boton-whatsapp {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    background-color: #25d366;
-    color: #ffffff;
-    padding: 0.75rem 1.25rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
+   position: fixed;
+   bottom: 1.5rem;
+   right: 1.5rem;
+   background-color: #25d366;
+   color: #ffffff;
+   padding: 0.75rem 1.25rem;
+   border-radius: 50px;
+   text-decoration: none;
+   font-weight: 700;
 }
 
 /* Botón flotante de WhatsApp: hover y foco
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 .boton-whatsapp:hover,
 .boton-whatsapp:focus {
-    background-color: #128c7e;
-    outline: 3px solid var(--color-naranja);
+   background-color: #128c7e;
+   outline: 3px solid var(--color-naranja);
 }
 
-/* --- 3.3 Tablas y Formularios --- */
+/* --- 3.3 Tablas y formularios --- */
 
 /* Tablas (ancho, margen inferior y tamaño de texto)
    Usada solo en 1 página: Tarifas */
 table {
-    width: 100%;
-    margin-bottom: var(--spacing-lg);
-    font-size: smaller;
+   width: 100%;
+   margin-bottom: var(--spacing-lg);
+   font-size: smaller;
 }
 
 /* Celdas de tabla (relleno y borde)
    Usada solo en 1 página: Tarifas */
 th,
 td {
-    padding: 0.25rem;
-    border: 1px solid var(--color-gris);
+   padding: 0.25rem;
+   border: 1px solid var(--color-gris);
 }
 
 /* Encabezados de tabla (fondo y color)
    Usada solo en 1 página: Tarifas */
 th {
-    background-color: var(--color-azul);
-    color: var(--color-crema);
+   background-color: var(--color-azul);
+   color: var(--color-crema);
 }
 
-/* Columna del formulario (se muestra primero)
+/* Columna del formulario (se muestra primero en móvil)
    Usada solo en 1 página: Reservas */
 #contenedor-formulario {
-    order: -1;
+   order: -1;
 }
 
 /* Grupos de campos del formulario
    Usada solo en 1 página: Reservas */
 fieldset {
-    border: 1px solid var(--color-gris);
-    border-radius: 8px;
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
+   border: 1px solid var(--color-gris);
+   border-radius: 8px;
+   padding: var(--spacing-md);
+   margin-bottom: var(--spacing-md);
 }
 
 /* Etiquetas de los campos del formulario
    Usada solo en 1 página: Reservas */
 label {
-    display: block;
-    margin-bottom: var(--spacing-sm);
-    font-weight: 600;
+   display: block;
+   margin-bottom: var(--spacing-sm);
+   font-weight: 600;
 }
 
 /* Listas desplegables y área de comentarios
    Usada solo en 1 página: Reservas */
 select,
 textarea {
-    width: 100%;
-    padding: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
-    border: 1px solid var(--color-gris);
-    border-radius: 4px;
+   width: 100%;
+   padding: var(--spacing-sm);
+   margin-bottom: var(--spacing-md);
+   border: 1px solid var(--color-gris);
+   border-radius: 4px;
 }
 
 /* Campos del formulario: foco
@@ -304,70 +319,110 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid var(--color-naranja);
-    border-color: var(--color-naranja);
+   outline: 3px solid var(--color-naranja);
+   border-color: var(--color-naranja);
 }
 
-/* --- 3.4 Pie de Página (Footer) --- */
+/* --- 3.4 Pie de página --- */
 
-/* Pie de página
+/* Pie de página:
    Usada en las 3 páginas: Inicio, Tarifas y Reservas */
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: wrap;
-    border-top: 1px solid var(--color-gris);
-    padding-top: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-    color: var(--color-gris);
-    font-size: 0.9rem;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   gap: 0.25rem 1.5rem;
+   margin-top: var(--spacing-lg);
+   font-size: 0.9rem;
 }
+
+/* CLASE PROPIA:
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.pie-marca {
+   background-color: var(--color-azul);
+   color: var(--color-crema);
+   padding: var(--spacing-md);
+   padding-bottom: 4.5rem;
+   border-radius: var(--bs-border-radius);
+}
+
+/* Pie de página:
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.pie-marca a {
+   color: var(--color-crema);
+   text-decoration: underline;
+}
+
+/* Pie de página:
+   Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+.pie-marca a:hover,
+.pie-marca a:focus {
+   text-decoration: none;
+}
+
 
 /* ==========================================================================
 4. MEDIA QUERIES: TABLET (768px en adelante)
-   Solo se redefine lo que cambia respecto al diseño móvil.
-========================================================================== */
+Solo se redefine lo que cambia respecto al diseño móvil.
+   ========================================================================== */
 @media (min-width: 768px) {
 
-    /* Encabezado: separa logo y menú, y permite que bajen de línea
+   /* Cuerpo
        Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-    header {
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+   body {
+      padding-bottom: 5rem;
+   }
 
-    /* Tablas: texto de tamaño normal
-       Usada solo en 1 página: Tarifas */
-    table {
-        font-size: 1rem;
-    }
-
-    /* Celdas de tabla: más relleno
-       Usada solo en 1 página: Tarifas */
-    th,
-    td {
-        padding: var(--spacing-sm);
-    }
-
-    /* Pie de página: elementos en fila
+   /* Pie de página
        Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-    footer {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
+   .pie-marca {
+      padding-bottom: var(--spacing-md);
+   }
+
+   /* Encabezado
+       Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+   .encabezado-marca {
+      padding: var(--spacing-sm) var(--spacing-md);
+   }
+
+   /* Encabezado
+       Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+   .encabezado-marca h1 {
+      font-size: 2rem;
+   }
+
+   /* Encabezado
+       Usada en las 3 páginas: Inicio, Tarifas y Reservas */
+   .navbar-brand img {
+      width: 10rem;
+      height: auto;
+   }
+
+   /* Tablas
+       Usada solo en 1 página: Tarifas */
+   table {
+      font-size: 1rem;
+   }
+
+   /* Celdas de tabla
+       Usada solo en 1 página: Tarifas */
+   th,
+   td {
+      padding: var(--spacing-sm);
+   }
 }
+
 
 /* ==========================================================================
 5. MEDIA QUERIES: ESCRITORIO (992px en adelante)
-========================================================================== */
+Desde aquí Bootstrap muestra el menú en fila (navbar-expand-lg).
+   ========================================================================== */
 @media (min-width: 992px) {
 
-    /* Menú de navegación: enlaces en fila
+   /* Marca del navbar: ocupa solo lo que mide su contenido y no baja de línea
        Usada en las 3 páginas: Inicio, Tarifas y Reservas */
-    #menu {
-        flex-direction: row;
-    }
+   .navbar-brand {
+      flex: 0 1 auto;
+      white-space: nowrap;
+   }
 }
