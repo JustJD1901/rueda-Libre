@@ -300,30 +300,34 @@ Comparativa: css puro vs Bootstrap
 
 4. DESVENTAJAS OBSERVADAS
 
-  - Dependencia externa: hay que cargar el CSS y el JS de Bootstrap
-    (CDN) aunque solo se use una parte de la libreria.
-  - El HTML queda con mas clases (row, col-12, col-md-6, g-4, gx-3,
-    align-items-center, py-4...) y hay que conocerlas o consultarlas.
-  - El CSS propio y Bootstrap pueden chocar. Ejemplo: la regla
-    display: grid de #contenedor-portada habria roto el .row de
-    Bootstrap, por eso hubo que quitarla al migrar la portada.
-  - Siguen haciendo falta ajustes propios sobre Bootstrap:
-    .card-img-top (por el margen y el borde redondeado de img), el
-    color de los titulos dentro de las tarjetas y los botones propios.
-  - Menos control directo del layout: hay que ceñirse a la grilla de
-    12 columnas.
+  - Dependencia externa: hay que cargar el CSS y el JS de Bootstrap (CDN) aunque solo se use una parte de la libreria.
+  - El HTML queda con mas clases (row, col-12, col-md-6, g-4, gx-3, align-items-center, py-4...) y hay que conocerlas o consultarlas.
+  - El CSS propio y Bootstrap pueden chocar. Ejemplo: la regla display: grid de #contenedor-portada habria roto el .row de Bootstrap, por eso hubo que quitarla al migrar la portada.
+  - Siguen haciendo falta ajustes propios sobre Bootstrap: .card-img-top (por el margen y el borde redondeado de img), el color de los titulos dentro de las tarjetas y los botones propios.
+  - Menos control directo del layout: hay que ceñirse a la grilla de 12 columnas.
 
 
 5. CONCLUSION
 ---------------------------------------------------------------------
-  Para este sitio Bootstrap compensa: el CSS propio bajo de 490 a 335 lineas
-  y el trabajo paso de aproximadamente un dia a
-  unas 4 horas. La estructura y el comportamiento responsive quedaron
-  a cargo de la grilla, y el CSS propio se limito a lo que da
-  identidad al sitio: variables de color y tipografia, encabezado,
-  menu, botones, tablas y pie de pagina.
+  Para este sitio Bootstrap compensa: el CSS propio bajo de 490 a 335 lineas y el trabajo paso de aproximadamente un dia a
+  unas 4 horas. La estructura y el comportamiento responsive quedaron a cargo de la grilla, y el CSS propio se limito a lo que da
+  identidad al sitio: variables de color y tipografia, encabezado, menu, botones, tablas y pie de pagina.
 
-  A cambio hay que depender de una libreria externa, un HTML con mas
-  clases y algunos ajustes para que Bootstrap y el CSS propio convivan.
-  La mejor combinacion fue usar Bootstrap para la estructura y el
-  responsive, y CSS propio solo para el estilo propio de la marca.
+  A cambio hay que depender de una libreria externa, un HTML con mas clases y algunos ajustes para que Bootstrap y el CSS propio convivan.
+  La mejor combinacion fue usar Bootstrap para la estructura y el responsive, y CSS propio solo para el estilo propio de la marca.
+
+
+Prototipo nocturno - Semana 3:
+
+Comparativa de botones (Bootstrap vs. Tailwind) y tipos de framework:
+
+- Botón con Bootstrap (Semana 2): En la semana 2 armé los botones usando
+ las clases de componentes predefinidos de la documentación de Bootstrap
+ (junto con utilidades como rounded-pill), sin tener que escribir CSS desde cero para su estructura. Eso fue rápido, pero como ya traían una apariencia definida por el framework, me tocó hacer ajustes aparte en mi hoja de estilos (style.css) para darles los colores propios de la marca.
+
+- Botón hoy con Tailwind: Para el enlace "Inscríbete" del prototipo nocturno no existía una clase de botón lista para usar. Lo construí desde cero directamente en el HTML combinando utilidades pequeñas: espaciado interno (px-6 py-3), colores de fondo y texto (bg-amber-400 text-slate-950), tipografía (text-sm font-bold uppercase tracking-wide) y
+ bordes redondeados (rounded-lg), sin tocar una sola línea de CSS propio ni usar <style>.
+
+- Diferencia clave entre ambos enfoques: Un framework basado en componentes (como Bootstrap) te entrega piezas completas ya diseñadas (botones, tarjetas, grillas)
+ listas para poner en la página, lo cual agiliza mucho al inicio pero limita la personalización si quieres salirte de su estilo base. En cambio, un framework utility-first (como Tailwind)
+ no te da componentes armados, sino clases utilitarias de una sola propiedad para que tú mismo construyas el diseño exacto en el HTML con total control visual.
