@@ -319,7 +319,7 @@ Comparativa: css puro vs Bootstrap
 
 Prototipo nocturno - Semana 3:
 
-Comparativa de botones (Bootstrap vs. Tailwind) y tipos de framework:
+MiniReto 1:
 
 - Botón con Bootstrap (Semana 2): En la semana 2 armé los botones usando
  las clases de componentes predefinidos de la documentación de Bootstrap
@@ -331,3 +331,9 @@ Comparativa de botones (Bootstrap vs. Tailwind) y tipos de framework:
 - Diferencia clave entre ambos enfoques: Un framework basado en componentes (como Bootstrap) te entrega piezas completas ya diseñadas (botones, tarjetas, grillas)
  listas para poner en la página, lo cual agiliza mucho al inicio pero limita la personalización si quieres salirte de su estilo base. En cambio, un framework utility-first (como Tailwind)
  no te da componentes armados, sino clases utilitarias de una sola propiedad para que tú mismo construyas el diseño exacto en el HTML con total control visual.
+
+MiniReto 2 - Semana 3:
+
+- Búsqueda en output.css: Al buscar la clase "bg-amber-400" (que sí usé en el botón principal) dentro de src/output.css, la regla CSS aparece generada en el archivo. En cambio, al buscar "bg-pink-500" (una clase que no utilicé en el HTML), no aparece por ningún lado.
+- ¿Por qué ocurre esto?: Cuando se ejecuta Tailwind con la CLI, revisa los archivos HTML del proyecto y compila únicamente las clases utilitarias que realmente están escritas en el código.
+ De esta forma evita incluir miles de clases sin usar y mantiene el archivo output.css liviano y listo para producción.
