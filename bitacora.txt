@@ -345,3 +345,8 @@ Para garantizar la consistencia visual, establecí las siguientes reglas de dise
 2. Escala de espaciado común: Se aplicaron rellenos de 'p-4' en las alertas e inputs, 'p-6' en la card principal y márgenes verticales de 'space-y-4' y 'space-y-6' para separar contenidos.
 3. Paleta de color y contrastes: Fondo oscuro unificado en 'bg-slate-950', contenedores en 'bg-slate-900', textos principales en 'text-white' y detalles en 'text-amber-400' (enlaces, precios e inputs enfocados) para asegurar un contraste accesible. El foco visual en botones e inputs se marca con anillo del color de la marca ('ring-amber-400').
 4. Accesibilidad e internacionalización: Las alertas se equiparon con roles semánticos ('role="alert"' y 'role="status"') para los lectores de pantalla y las etiquetas `<label>` se enlazaron a los inputs mediante el atributo 'for'.
+
+MiniReto 5 - Semana 3:
+
+- Decisión para la sección "¿Cómo funciona?" (Grid vs. Flex): Para distribuir los cuatro pasos elegí Grid (grid-cols-4 con gap-6) en lugar de Flex porque necesitaba cuatro columnas de exactamente el mismo ancho y alineadas entre sí de forma uniforme, sin tener que calcular porcentajes ni ajustar el crecimiento de cada tarjeta por separado.
+ En cambio, dejé Flex para el encabezado y el pie de página porque ahí los elementos tienen tamaños distintos y resulta más directo alinearlos verticalmente y repartir el espacio entre bloques.
