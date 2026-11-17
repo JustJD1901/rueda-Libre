@@ -337,3 +337,11 @@ MiniReto 2 - Semana 3:
 - Búsqueda en output.css: Al buscar la clase "bg-amber-400" (que sí usé en el botón principal) dentro de src/output.css, la regla CSS aparece generada en el archivo. En cambio, al buscar "bg-pink-500" (una clase que no utilicé en el HTML), no aparece por ningún lado.
 - ¿Por qué ocurre esto?: Cuando se ejecuta Tailwind con la CLI, revisa los archivos HTML del proyecto y compila únicamente las clases utilitarias que realmente están escritas en el código.
  De esta forma evita incluir miles de clases sin usar y mantiene el archivo output.css liviano y listo para producción.
+
+MiniReto 4 - Semana 3:
+
+Para garantizar la consistencia visual, establecí las siguientes reglas de diseño comunes en todo el kit:
+1. Radios de borde unificados: Se usó 'rounded-lg' en botones e inputs para un aspecto compacto y 'rounded-xl' en contenedores más grandes como cards y alertas para suavizar el diseño.
+2. Escala de espaciado común: Se aplicaron rellenos de 'p-4' en las alertas e inputs, 'p-6' en la card principal y márgenes verticales de 'space-y-4' y 'space-y-6' para separar contenidos.
+3. Paleta de color y contrastes: Fondo oscuro unificado en 'bg-slate-950', contenedores en 'bg-slate-900', textos principales en 'text-white' y detalles en 'text-amber-400' (enlaces, precios e inputs enfocados) para asegurar un contraste accesible. El foco visual en botones e inputs se marca con anillo del color de la marca ('ring-amber-400').
+4. Accesibilidad e internacionalización: Las alertas se equiparon con roles semánticos ('role="alert"' y 'role="status"') para los lectores de pantalla y las etiquetas `<label>` se enlazaron a los inputs mediante el atributo 'for'.
