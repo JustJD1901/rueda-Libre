@@ -411,3 +411,7 @@ MiniReto 9 - Semana 3:
 MiniReto 10 - Semana 3:
 
 - Tiempo real invertido: 38 minutos.
+
+MiniReto 11 - Semana 3:
+
+- Tiempo real invertido: 42 minutos.
