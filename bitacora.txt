@@ -403,3 +403,7 @@ MiniReto 8 - Semana 3:
 4. Recomendación justificada para Rueda Libre:
 Aunque Bootstrap requiere más trabajo inicial para ajustar sus estilos y carga más peso en CSS/JS (59.0 kB frente a los [X] kB de Tailwind), en mi opinión ofrece una estructura más sólida y mejores resultados integrales para el sitio principal multipágina de Rueda Libre (Inicio, Tarifas y Reservas), ya que resuelve de forma uniforme la navegación desplegable, carruseles, tablas y formularios complejos.
 Para campañas puntuales o landings de alto impacto visual y carga ultrarrápida como "Rueda Nocturna", conviene mantener Tailwind CSS.
+
+MiniReto 9 - Semana 3:
+
+- Tiempo real invertido: 35 minutos.
