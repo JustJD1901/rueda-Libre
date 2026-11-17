@@ -376,3 +376,30 @@ MiniReto 7 - Semana 3:
   * Verde Ruta (#1e7a4f) como texto sobre Azul Noche (#14213d) obtiene 3.01:1 (no cumple el mínimo de 4.5:1).
   * Corrección: En modo oscuro se reemplazó el texto verde sobre fondo oscuro por Amarillo Farol (#ffd166) sobre Azul Noche (#14213d), logrando 11.08:1, y se reservó Verde Ruta (#1e7a4f) como fondo con texto blanco (#ffffff), alcanzando 5.31:1.
   * Crema (#faf6ef) sobre Azul Noche (#14213d) obtiene 14.83:1; en modo claro, Azul Noche sobre Crema obtiene 14.83:1 y Verde Ruta sobre Crema obtiene 4.93:1. Todas las combinaciones superan 4.5:1.
+
+MiniReto 8 - Semana 3:
+
+1. Refactorización y conteo de clases repetidas en nocturna/index.html:
+- Botón principal ("Inscríbete"): se repetía 6 veces con 15 utilidades cada uno (encabezado, sección principal, las 3 cards de rutas y el botón de envío del formulario). Se extrajo a .btn-primario con @apply.
+- Botón secundario ("Ver rutas") y botón de contorno ("Más información"): se extrajeron a .btn-secundario y .btn-contorno con @apply para mantener consistente el kit de 3 botones.
+- Cards de rutas (3 repeticiones) y tarjetas de pasos (4 repeticiones): se mantuvieron con las utilidades del kit en el HTML, ordenadas por categoría (layout, espaciado, tipografía, color y bordes, y estados).
+
+2. Mediciones reales de tamaño (DevTools Network):
+- Sitio v2.0 con Bootstrap:
+  * bootstrap.min.css: 33.8 kB transferidos
+  * bootstrap.bundle.min.js: 25.2 kB transferidos
+  * bootstrap-icons.min.css: 14.4 kB transferidos
+  * style.css propio: 12.0 kB transferidos (335 líneas)
+  * Total CSS + JS cargado en v2.0: 85.4 kB (59.0 kB solo del núcleo de Bootstrap)
+- Landing Nocturna con Tailwind (--minify):
+  * nocturna/src/output.css: 1 kB (0 kB de JavaScript adicional)
+
+3. Comparativa Bootstrap vs Tailwind (cuatro criterios):
+- Curva de aprendizaje: Bootstrap exige aprender su sistema de componentes, clases predefinidas (row, col-*, navbar, card) y cómo sobreescribir sus variables o especificidades cuando choca con estilos propios; en mi experiencia resultó más complejo y trabajoso al principio. Tailwind tiene una sintaxis más directa (una clase por propiedad CSS), aunque requiere memorizar la escala de utilidades y mantener orden en el HTML.
+- Personalización: En Bootstrap hay que luchar contra los estilos base del framework (como me ocurrió con los márgenes y bordes de .card-img-top en la semana 2) para lograr una identidad distinta. En Tailwind con @theme (colores de marca, Amarillo Farol y fuentes Montserrat/Open Sans) y variantes dark: el control visual es total sin escribir reglas de sobrescritura.
+- Tamaño final: Bootstrap obliga a cargar la librería completa de CSS (33.8 kB) y su bundle de JavaScript (25.2 kB) aunque solo se use una fracción de sus componentes, además de 12.0 kB (335 líneas) de style.css propio. Tailwind con --minify compila únicamente las utilidades usadas en el HTML, generando un archivo final de apenas [X] kB y 0 kB de JS.
+- Casos de uso: Tailwind es ideal para landings promocionales, campañas con identidad visual propia (como Rueda Nocturna) y proyectos donde importa minimizar el peso de carga. Bootstrap funciona muy bien para sitios multipágina o aplicaciones administrativas que necesitan componentes interactivos listos (carruseles, menús colapsables, modales) y una estructura estandarizada.
+
+4. Recomendación justificada para Rueda Libre:
+Aunque Bootstrap requiere más trabajo inicial para ajustar sus estilos y carga más peso en CSS/JS (59.0 kB frente a los [X] kB de Tailwind), en mi opinión ofrece una estructura más sólida y mejores resultados integrales para el sitio principal multipágina de Rueda Libre (Inicio, Tarifas y Reservas), ya que resuelve de forma uniforme la navegación desplegable, carruseles, tablas y formularios complejos.
+Para campañas puntuales o landings de alto impacto visual y carga ultrarrápida como "Rueda Nocturna", conviene mantener Tailwind CSS.

@@ -13,3 +13,17 @@
     --font-titulos: "Montserrat", system-ui, -apple-system, sans-serif;
     --font-cuerpo: "Open Sans", Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+    .btn-primario {
+        @apply inline-block px-6 py-3 text-sm font-bold uppercase tracking-wide bg-verde text-white rounded-lg shadow-md hover:bg-azul focus:outline-none focus:ring-2 focus:ring-verde focus:ring-offset-2 focus:ring-offset-crema dark:bg-amarillo-farol dark:text-azul dark:hover:bg-naranja dark:focus:ring-amarillo-farol dark:focus:ring-offset-azul;
+    }
+
+    .btn-secundario {
+        @apply inline-block px-6 py-3 text-sm font-bold uppercase tracking-wide bg-azul text-crema rounded-lg shadow-sm hover:bg-gris focus:outline-none focus:ring-2 focus:ring-azul focus:ring-offset-2 focus:ring-offset-crema dark:bg-white/10 dark:text-crema dark:border dark:border-crema/25 dark:hover:bg-white/20 dark:focus:ring-amarillo-farol dark:focus:ring-offset-azul;
+    }
+
+    .btn-contorno {
+        @apply inline-block px-6 py-3 text-sm font-bold uppercase tracking-wide border-2 border-verde text-verde rounded-lg shadow-sm hover:bg-verde hover:text-white focus:outline-none focus:ring-2 focus:ring-verde focus:ring-offset-2 focus:ring-offset-crema dark:border-amarillo-farol dark:text-amarillo-farol dark:hover:bg-amarillo-farol dark:hover:text-azul dark:focus:ring-amarillo-farol dark:focus:ring-offset-azul;
+    }
+}
