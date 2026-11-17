@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+    /* Colores de marca Rueda Libre + Amarillo Farol */
+    --color-verde: #1e7a4f;
+    --color-naranja: #f39a2b;
+    --color-azul: #14213d;
+    --color-crema: #faf6ef;
+    --color-gris: #5b6470;
+    --color-amarillo-farol: #ffd166;
+
+    /* Tipografías de marca */
+    --font-titulos: "Montserrat", system-ui, -apple-system, sans-serif;
+    --font-cuerpo: "Open Sans", Arial, Helvetica, sans-serif;
+}

@@ -367,3 +367,12 @@ MiniReto 6 - Semana 3:
 | 768 px   | En fila con enlaces visibles      | 2 columnas (sm:)   | 2 columnas (sm:)   | Formulario apilado; footer 3 col| No                |
 | 1024 px  | En fila con espaciado amplio      | 3 columnas (lg:)   | 4 columnas (lg:)   | 2 columnas (lg:); footer 3 col  | No                |
 | 1280 px  | En fila centrada (max-w-6xl)      | 3 columnas (lg:)   | 4 columnas (lg:)   | 2 columnas (lg:); footer 3 col  | No                |
+
+
+MiniReto 7 - Semana 3:
+
+- Personalización con @theme: Se definieron en nocturna/src/input.css los 5 colores institucionales de Rueda Libre (verde #1e7a4f, naranja #f39a2b, azul #14213d, crema #faf6ef, gris #5b6470) más el color de campaña amarillo-farol (#ffd166), junto con las fuentes Montserrat (--font-titulos) y Open Sans (--font-cuerpo).
+- Validación de contraste WCAG en modo oscuro:
+  * Verde Ruta (#1e7a4f) como texto sobre Azul Noche (#14213d) obtiene 3.01:1 (no cumple el mínimo de 4.5:1).
+  * Corrección: En modo oscuro se reemplazó el texto verde sobre fondo oscuro por Amarillo Farol (#ffd166) sobre Azul Noche (#14213d), logrando 11.08:1, y se reservó Verde Ruta (#1e7a4f) como fondo con texto blanco (#ffffff), alcanzando 5.31:1.
+  * Crema (#faf6ef) sobre Azul Noche (#14213d) obtiene 14.83:1; en modo claro, Azul Noche sobre Crema obtiene 14.83:1 y Verde Ruta sobre Crema obtiene 4.93:1. Todas las combinaciones superan 4.5:1.
