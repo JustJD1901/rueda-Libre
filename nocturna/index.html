@@ -9,44 +9,191 @@
 </head>
 
 <body class="bg-slate-950 text-white">
-    <main class="max-w-3xl mx-auto px-6 py-16 space-y-6">
-        <p
-            class="inline-block bg-slate-800 text-amber-400 px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full">
-            Nuevo · Jueves a sábado
-        </p>
+    <main class="max-w-3xl mx-auto px-6 py-16 space-y-16">
+        <!-- Sección principal -->
+        <section class="space-y-6">
+            <p
+                class="inline-block bg-slate-800 text-amber-400 px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full">
+                Nuevo · Jueves a sábado
+            </p>
 
-        <h1 class="text-4xl font-bold tracking-tight leading-tight text-white">
-            Rueda Nocturna
-        </h1>
+            <h1 class="text-4xl font-bold tracking-tight leading-tight text-white">
+                Rueda Nocturna
+            </h1>
 
-        <p class="max-w-xl text-lg leading-relaxed text-slate-300">
-            Descubre Medellín en bici cuando se encienden las luces
-        </p>
+            <p class="max-w-xl text-lg leading-relaxed text-slate-300">
+                Descubre Medellín en bici cuando se encienden las luces
+            </p>
 
-        <div class="w-full max-w-md bg-slate-900 p-4 space-y-2 rounded-lg">
-            <p class="text-base font-semibold text-amber-400">3 rutas</p>
-            <p class="text-base font-semibold text-white">Desde $55.000</p>
-        </div>
+            <div class="w-full max-w-md bg-slate-900 p-4 space-y-2 rounded-lg">
+                <p class="text-base font-semibold text-amber-400">3 rutas</p>
+                <p class="text-base font-semibold text-white">Desde $55.000</p>
+            </div>
 
-        <div class="flex flex-wrap gap-4 pt-2">
-            <!-- Botón principal -->
-            <button type="button"
-                class="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wide rounded-lg shadow-md hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
-                Inscríbete
-            </button>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <!-- Botón principal -->
+                <button type="button"
+                    class="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wide rounded-lg shadow-md hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                    Inscríbete
+                </button>
 
-            <!-- Botón secundario -->
-            <button type="button"
-                class="px-6 py-3 bg-slate-800 text-white text-sm font-bold uppercase tracking-wide rounded-lg shadow-sm hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-950">
-                Ver rutas
-            </button>
+                <!-- Botón secundario -->
+                <button type="button"
+                    class="px-6 py-3 bg-slate-800 text-white text-sm font-bold uppercase tracking-wide rounded-lg shadow-sm hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-950">
+                    Ver rutas
+                </button>
 
-            <!-- Botón de contorno -->
-            <button type="button"
-                class="px-6 py-3 border border-amber-400 text-amber-400 text-sm font-bold uppercase tracking-wide rounded-lg shadow-sm hover:bg-amber-400/10 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950">
-                Más información
-            </button>
-        </div>
+                <!-- Botón de contorno -->
+                <button type="button"
+                    class="px-6 py-3 border border-amber-400 text-amber-400 text-sm font-bold uppercase tracking-wide rounded-lg shadow-sm hover:bg-amber-400/10 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950">
+                    Más información
+                </button>
+            </div>
+        </section>
+
+        <!-- Sección Rutas -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold tracking-tight text-white">
+                Rutas
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Card 1: Luces del Centro -->
+                <article
+                    class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-xl shadow-md overflow-hidden hover:border-amber-400 hover:shadow-xl">
+                    <img src="../img/luces-centro.jpg" alt="Recorrido nocturno Luces del Centro en bicicleta"
+                        class="w-full h-48 object-cover">
+
+                    <div class="p-6 space-y-4">
+                        <span
+                            class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full bg-emerald-500/20 text-emerald-300">
+                            Fácil
+                        </span>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Luces del Centro
+                        </h3>
+
+                        <ul class="space-y-2 border-t border-slate-800 pt-4">
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Distancia</span>
+                                <span class="text-sm font-semibold text-white">10 km</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Duración</span>
+                                <span class="text-sm font-semibold text-white">2 h</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Punto de encuentro</span>
+                                <span class="text-sm font-semibold text-white">Sede de Rueda Libre</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2 flex items-center justify-between">
+                            <div>
+                                <span class="block text-xs uppercase tracking-wide text-slate-400">Precio</span>
+                                <span class="text-2xl font-bold text-amber-400">$55.000</span>
+                            </div>
+
+                            <button type="button"
+                                class="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wide rounded-lg shadow-md hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                                Inscríbete
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: Miradores de la Ciudad -->
+                <article
+                    class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-xl shadow-md overflow-hidden hover:border-amber-400 hover:shadow-xl">
+                    <img src="../img/miradores-ciudad.jpg" alt="Recorrido nocturno Miradores de la Ciudad en bicicleta"
+                        class="w-full h-48 object-cover">
+
+                    <div class="p-6 space-y-4">
+                        <span
+                            class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full bg-amber-500/20 text-amber-300">
+                            Medio
+                        </span>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Miradores de la Ciudad
+                        </h3>
+
+                        <ul class="space-y-2 border-t border-slate-800 pt-4">
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Distancia</span>
+                                <span class="text-sm font-semibold text-white">16 km</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Duración</span>
+                                <span class="text-sm font-semibold text-white">3 h</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Punto de encuentro</span>
+                                <span class="text-sm font-semibold text-white">Sede de Rueda Libre</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2 flex items-center justify-between">
+                            <div>
+                                <span class="block text-xs uppercase tracking-wide text-slate-400">Precio</span>
+                                <span class="text-2xl font-bold text-amber-400">$75.000</span>
+                            </div>
+
+                            <button type="button"
+                                class="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wide rounded-lg shadow-md hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                                Inscríbete
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3: Luna en Las Palmas -->
+                <article
+                    class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-xl shadow-md overflow-hidden hover:border-amber-400 hover:shadow-xl">
+                    <img src="../img/luna-palmas.jpg" alt="Recorrido nocturno Luna en Las Palmas en bicicleta"
+                        class="w-full h-48 object-cover">
+
+                    <div class="p-6 space-y-4">
+                        <span
+                            class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full bg-rose-500/20 text-rose-300">
+                            Difícil
+                        </span>
+
+                        <h3 class="text-xl font-bold text-white">
+                            Luna en Las Palmas
+                        </h3>
+
+                        <ul class="space-y-2 border-t border-slate-800 pt-4">
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Distancia</span>
+                                <span class="text-sm font-semibold text-white">22 km</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Duración</span>
+                                <span class="text-sm font-semibold text-white">3,5 h</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-xs uppercase tracking-wide text-slate-400">Punto de encuentro</span>
+                                <span class="text-sm font-semibold text-white">Sede de Rueda Libre</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2 flex items-center justify-between">
+                            <div>
+                                <span class="block text-xs uppercase tracking-wide text-slate-400">Precio</span>
+                                <span class="text-2xl font-bold text-amber-400">$95.000</span>
+                            </div>
+
+                            <button type="button"
+                                class="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wide rounded-lg shadow-md hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                                Inscríbete
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 
