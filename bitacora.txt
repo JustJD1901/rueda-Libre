@@ -350,3 +350,20 @@ MiniReto 5 - Semana 3:
 
 - Decisión para la sección "¿Cómo funciona?" (Grid vs. Flex): Para distribuir los cuatro pasos elegí Grid (grid-cols-4 con gap-6) en lugar de Flex porque necesitaba cuatro columnas de exactamente el mismo ancho y alineadas entre sí de forma uniforme, sin tener que calcular porcentajes ni ajustar el crecimiento de cada tarjeta por separado.
  En cambio, dejé Flex para el encabezado y el pie de página porque ahí los elementos tienen tamaños distintos y resulta más directo alinearlos verticalmente y repartir el espacio entre bloques.
+
+MiniReto 6 - Semana 3:
+
+1. Problemas detectados al revisar la versión de escritorio a 360 px:
+- Encabezado desbordado: El logo, los tres enlaces de sección y el botón "Inscríbete" intentaban caber en una sola fila de 360 px, apretando los elementos y provocando scroll horizontal.
+- Columnas comprimidas: Las cuadrículas fijas de 3 columnas en "Rutas", 4 columnas en "¿Cómo funciona?" y 2 columnas en "Inscripción" dividían los 360 px en espacios demasiado estrechos, cortando textos, botones y campos de formulario.
+- Pie de página aplastado: Los tres bloques del footer se mostraban en una misma fila en lugar de apilarse verticalmente.
+- Escala tipográfica rígida: Los títulos y rellenos de escritorio (text-4xl, p-8, py-16) ocupaban demasiado espacio vertical en pantallas pequeñas.
+
+2. Tabla de pruebas en modo dispositivo (DevTools):
+
+| Ancho    | Encabezado                        | Sección Rutas      | ¿Cómo funciona?    | Inscripción y Footer            | Scroll horizontal |
+|----------|-----------------------------------|--------------------|--------------------|---------------------------------|-------------------|
+| 360 px   | Apilado; enlaces ocultos y CTA visible | 1 columna     | 1 columna          | Formulario y footer en 1 bloque | No                |
+| 768 px   | En fila con enlaces visibles      | 2 columnas (sm:)   | 2 columnas (sm:)   | Formulario apilado; footer 3 col| No                |
+| 1024 px  | En fila con espaciado amplio      | 3 columnas (lg:)   | 4 columnas (lg:)   | 2 columnas (lg:); footer 3 col  | No                |
+| 1280 px  | En fila centrada (max-w-6xl)      | 3 columnas (lg:)   | 4 columnas (lg:)   | 2 columnas (lg:); footer 3 col  | No                |
