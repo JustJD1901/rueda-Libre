@@ -14,21 +14,22 @@
 </head>
 
 <body class="font-cuerpo bg-crema text-azul dark:bg-azul dark:text-crema">
-    <!-- Encabezado -->
     <header class="bg-crema border-b border-gris/25 dark:bg-azul dark:border-crema/15">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-6xl mx-auto px-4 sm:px-6 py-4">
-            <a href="#inicio" class="font-titulos text-xl font-bold tracking-tight text-azul dark:text-crema">
-                Rueda <span class="text-verde dark:text-amarillo-farol">Nocturna</span>
+            <a href="../index.html"
+                class="flex items-center gap-3 shrink-0 whitespace-nowrap font-titulos text-xl font-bold tracking-tight text-azul dark:text-crema">
+                <img src="../img/rueda-libre.png" alt="Logo Rueda Libre"
+                    class="w-9 h-9 shrink-0 rounded-full object-cover">
+                <span>Rueda Libre · <span class="text-verde dark:text-amarillo-farol">Nocturna</span></span>
             </a>
 
-            <nav class="flex items-center gap-6 lg:gap-8">
-                <a href="#inicio"
-                    class="hidden md:inline text-sm font-semibold text-azul hover:text-verde dark:text-crema/85 dark:hover:text-amarillo-farol">Inicio</a>
+            <nav class="flex flex-wrap justify-center items-center gap-3 sm:gap-6">
                 <a href="#rutas"
                     class="hidden md:inline text-sm font-semibold text-azul hover:text-verde dark:text-crema/85 dark:hover:text-amarillo-farol">Rutas</a>
                 <a href="#como-funciona"
                     class="hidden md:inline text-sm font-semibold text-azul hover:text-verde dark:text-crema/85 dark:hover:text-amarillo-farol">¿Cómo
                     funciona?</a>
+                <a href="../paginas/reservas.html" class="btn-contorno">Reserva tu bici</a>
                 <a href="#inscripcion" class="btn-primario">Inscríbete</a>
             </nav>
         </div>
@@ -510,37 +511,49 @@
     </main>
 
     <!-- Pie de página -->
+    <!-- Pie de página coherente con el sitio principal -->
     <footer class="bg-crema border-t border-gris/25 dark:bg-azul dark:border-crema/15">
         <div
             class="flex flex-col md:flex-row justify-between items-start gap-8 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-            <!-- Bloque 1 -->
+            <!-- Bloque 1: Marca -->
             <div class="w-full md:flex-1 space-y-2">
-                <p class="font-titulos text-lg font-bold text-azul dark:text-crema">Rueda <span
-                        class="text-verde dark:text-amarillo-farol">Nocturna</span></p>
+                <p class="font-titulos text-lg font-bold text-azul dark:text-crema">
+                    Rueda Libre · <span class="text-verde dark:text-amarillo-farol">Nocturna</span>
+                </p>
                 <p class="text-sm leading-relaxed text-gris dark:text-crema/80">
-                    Recorridos nocturnos guiados en bicicleta por Medellín organizados por Rueda Libre.
+                    Alquiler de bicicletas y recorridos nocturnos guiados por Medellín. © 2026
                 </p>
             </div>
 
-            <!-- Bloque 2 -->
+            <!-- Bloque 2: Navegación del ecosistema -->
             <div class="w-full md:flex-1 space-y-2">
-                <p class="text-xs font-bold uppercase tracking-wider text-verde dark:text-amarillo-farol">Secciones</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-verde dark:text-amarillo-farol">Sitio Rueda
+                    Libre</p>
                 <ul class="space-y-1 text-sm text-azul dark:text-crema/85">
-                    <li><a href="#inicio" class="hover:text-verde dark:hover:text-amarillo-farol">Inicio</a></li>
-                    <li><a href="#rutas" class="hover:text-verde dark:hover:text-amarillo-farol">Rutas</a></li>
-                    <li><a href="#como-funciona" class="hover:text-verde dark:hover:text-amarillo-farol">¿Cómo
-                            funciona?</a></li>
-                    <li><a href="#inscripcion" class="hover:text-verde dark:hover:text-amarillo-farol">Inscripción</a>
-                    </li>
+                    <li><a href="../index.html" class="hover:text-verde dark:hover:text-amarillo-farol">Inicio Rueda
+                            Libre</a></li>
+                    <li><a href="../paginas/tarifas.html"
+                            class="hover:text-verde dark:hover:text-amarillo-farol">Tarifas y Rutas</a></li>
+                    <li><a href="../paginas/reservas.html"
+                            class="hover:text-verde dark:hover:text-amarillo-farol">Reserva tu bici</a></li>
+                    <li><a href="#inscripcion" class="hover:text-verde dark:hover:text-amarillo-farol">Inscripción
+                            Nocturna</a></li>
                 </ul>
             </div>
 
-            <!-- Bloque 3 -->
+            <!-- Bloque 3: Mismos datos de contacto del pie -->
             <div class="w-full md:flex-1 space-y-2">
-                <p class="text-xs font-bold uppercase tracking-wider text-verde dark:text-amarillo-farol">Punto de
-                    encuentro</p>
-                <p class="text-sm text-azul dark:text-crema">Sede de Rueda Libre · Medellín</p>
-                <p class="text-sm text-gris dark:text-crema/80">Salidas de jueves a sábado</p>
+                <p class="text-xs font-bold uppercase tracking-wider text-verde dark:text-amarillo-farol">Contacto y
+                    sede</p>
+                <p class="text-sm text-azul dark:text-crema">Sede de Rueda Libre (estación Poblado) · Medellín</p>
+                <p class="text-sm text-azul dark:text-crema/85">
+                    Correo: <a href="mailto:rueda_libre@gmail.com"
+                        class="underline hover:text-verde dark:hover:text-amarillo-farol">rueda_libre@gmail.com</a>
+                </p>
+                <p class="text-sm text-azul dark:text-crema/85">
+                    WhatsApp: <a href="https://wa.me/573000000000" target="_blank"
+                        class="underline hover:text-verde dark:hover:text-amarillo-farol">+57 300 000 0000</a>
+                </p>
             </div>
         </div>
     </footer>
