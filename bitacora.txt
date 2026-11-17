@@ -415,3 +415,11 @@ MiniReto 10 - Semana 3:
 MiniReto 11 - Semana 3:
 
 - Tiempo real invertido: 42 minutos.
+
+MiniReto 12 - Semana 3:
+
+- Validación W3C: Se validaron nocturna/index.html y paginas/reservas.html en validator.w3.org sin errores.
+- Documentación: Se consolidó la bitácora en README.md con enlaces a GitHub Pages, tabla de mediciones, capturas (escritorio, celular y modo oscuro) y aprendizajes.
+- Ensayo de demo (3 minutos):
+  - Duración real del ensayo: 2:45 minutos.
+  - Retroalimentación recibida: La navegación entre el sitio principal en Bootstrap y la landing en Tailwind se entiende muy bien, y el cambio a modo oscuro se ve fluido y legible. Como sugerencia, me recomendó hacer un poco más de zoom en DevTools al mostrar la vista móvil de 360 px y no extenderme tanto en el contexto inicial para explicar con más calma las dos decisiones técnicas.
